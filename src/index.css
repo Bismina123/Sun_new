@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter&display=swap");
-
+@font-face {
+  font-family: "Tt trailers";
+  src: url("https://uploads-ssl.webflow.com/636a19fb40cadc7608cc47df/636a1cacdae2e97553913a5b_TT%20Trailers%20ExtraBold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
 #root {
   width: 100vw;
   height: 100vh;
@@ -252,4 +258,11 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+.aboutUsText {
+  font-family: "Tt trailers";
+}
+
+.earth-3d-styles {
+  height: 500px;
 }
