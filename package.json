@@ -16,7 +16,18 @@
     "lamina": "^1.1.23",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "three": "^0.150.1"
+    "three": "^0.150.1",
+    "styled-components": "^6.1.0",
+    "@fontsource/kanit": "^5.0.17",
+    "@fontsource/lilita-one": "^5.0.17",
+    "@fontsource/rowdies": "^5.0.17",
+    "@fontsource/rubik": "^5.0.17",
+    "@mui/icons-material": "^5.14.13",
+    "@mui/material": "^5.14.13",
+    "framer-motion": "^10.12.2",
+    "react-animations": "^1.0.0",
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^6.16.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
