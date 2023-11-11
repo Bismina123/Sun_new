@@ -19,21 +19,20 @@ function App() {
           <Route element={<ToursMainPage />} path="/tours-page" />
         </Routes>
       </BrowserRouter>
-      <Header />
-      <Banner />
-      <Wrapper>
-        <AboutUs />
-        <BackgroundTextMarquee />
-        <WhatweDo />
-        {/* <ToursMainPage/> */}
-        <Services />
-        <Footer />
-      </Wrapper>
+      <LandingPage>
+          <Header />
+        <Landing>
+          <Banner />
+          <AboutUs />
+          <WhatweDo />
+          <Services />
+          <Footer />
+        </Landing>
+      </LandingPage>
     </>
   );
 }
-const Wrapper = styled.div`
-  position: relative;
+const Landing = styled.div`
   background-image: linear-gradient(
     to right top,
     #ffffff,
@@ -42,8 +41,6 @@ const Wrapper = styled.div`
     #b7deff,
     #8dd6fd
   );
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 `;
+const LandingPage = styled.div``;
 export default App;

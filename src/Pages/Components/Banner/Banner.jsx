@@ -27,6 +27,7 @@ import "@fontsource/rowdies/400.css"; // Specify weight
 // import "@fontsource/rowdies/400-italic.css"; // Specify weight and style
 import cloudImage from "./assets/img/bg.png";
 import planeImage from "./assets/img/plane.png";
+import BannerClouds from "../BannerClouds/BannerClouds";
 const Banner = () => {
   const [isScrolled, setIsScrolled] = useState(-1);
   useEffect(() => {
@@ -62,6 +63,7 @@ const Banner = () => {
   const rotate = 1 + scrollY * 0.0009;
   return (
     <MainWrapper>
+      <BannerClouds/>
       <SubWrapper>
         <Wrapper>
           <PlaneWrapperMain>
@@ -545,23 +547,15 @@ const Wrapper = styled.div({
   color: "grey",
 });
 const MainWrapper = styled.div`
-  background-image: linear-gradient(
-    to right top,
-    #ffffff,
-    #eff2ff,
-    #d7e7ff,
-    #b7deff,
-    #8dd6fd
-  );
 `;
 const SubWrapper = styled.div({
   minHeight: "100vh",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  backgroundImage: `url(${cloudImage})`,
-  backgroundPosition: "bottom center",
-  backgroundSize: "cover",
+  // backgroundImage: `url(${cloudImage})`,
+  // backgroundPosition: "bottom center",
+  // backgroundSize: "cover",
 });
 
 // const PlaneWrapper = styled.div({

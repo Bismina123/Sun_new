@@ -30,6 +30,18 @@ import planeImage from "./assets/img/plane.png";
 import leftImage from "./assets/img/left.png";
 import rightImage from "./assets/img/right.png";
 import Slide from "react-reveal/Slide";
+import hajj1 from "./assets/img/hajj/2.svg";
+import hajj2 from "./assets/img/hajj/3.svg";
+import hajj3 from "./assets/img/hajj/4.svg";
+import hajj4 from "./assets/img/hajj/5.svg";
+import hajj5 from "./assets/img/hajj/6.svg";
+import hajj6 from "./assets/img/hajj/7.svg";
+import hajj7 from "./assets/img/hajj/8.svg";
+import hajj8 from "./assets/img/hajj/9.svg";
+import hajj9 from "./assets/img/hajj/10.svg";
+import hajj10 from "./assets/img/hajj/11.svg";
+import ticket1 from "./assets/img/tour/t1.svg";
+import ticket2 from "./assets/img/tour/t2.svg";
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(-1);
   useEffect(() => {
@@ -67,65 +79,173 @@ const Services = () => {
     <MainWrapper>
       <SubWrapper>
         <Wrapper>
-          <WrapperRight>
-            <Slide right>
-              <img src={hajjImage} />
-              <h4>Hajj & umrah</h4>
-              <p>
-                We are a company which have a colossal practice about Hajj,
-                Umrah and visit to Holy places, we offer the unparalleled
-                services to the pilgrims owing to have self-experience and
-                preeminent acquaintance. Top class residences in Makkah & Madina
-                and nearest camp
-              </p>
-            </Slide>
-          </WrapperRight>
-          <WrapperLeft>
-            <Slide left>
-              <img src={hajjImage} />
-              <h4>Air Tickets</h4>
-              <p>
-                Being an accredited travel company we can provide travel
-                documents for all the major Airlines. Our Company is equipped
-                with latest reservation systems (GDS) where we can reserve, book
-                and rebook flights according to your desires and commitments.
-              </p>
-            </Slide>
-          </WrapperLeft>
-          <WrapperRight>
-            <Slide right>
-              <img src={hajjImage} />
-              <h4>Tour Packages</h4>
-              <p>
-                We are the travel company which offers various domestic and
-                international tour packages service within your budget. We are
-                specialized various Domestic & International tour Packages. Our
-                staff is well-travelled and has an excellent knowledge of
-                holiday destinations and our network of friends across the world
-                make sure all your needs are satisfied and enjoy the travel as
-                you expect. Our aim is provided luxury holidays without any
-                hassle.
-              </p>
-            </Slide>
-          </WrapperRight>
-          <WrapperLeft>
-            <Slide left>
-              <img src={hajjImage} />
-
-              <h4>Global Visa</h4>
-
-              <p>
-                We’re the company of professionals, doers and adventurous souls.
-                It is a one-stop solution for all your visa needs. We are an
-                agency with a difference in order to cater to all Visa related
-                services. Our objective is to provide the best services to all
-                our valued clients. Our TEAM consists of well trained and
-                experienced professionals, specialised in Visa related services.
-                We cater to Agents, Corporate – local as well as clients &
-                Agents from various parts of World
-              </p>
-            </Slide>
-          </WrapperLeft>
+          <Row>
+            <RowLeft>
+              <RowImage src={leftImage} />
+            </RowLeft>
+            <RowRight className="shadow-right">
+              <WrapperRight>
+                <Slide>
+                  <div className="div-block">
+                    <SvgIcon className="SvgIcon">
+                      <SvgIconBlock>
+                        <Slide top>
+                          <img src={hajj1} />
+                        </Slide>
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <Slide top>
+                          <img src={hajj2} left />
+                        </Slide>
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <Slide top>
+                          <img src={hajj3} right />
+                        </Slide>
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <img src={hajj4} left />
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <img src={hajj5} />
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <img src={hajj6} />
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <Slide top>
+                          <img src={hajj7} />
+                        </Slide>
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <Slide top>
+                          <img src={hajj8} />
+                        </Slide>
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <Slide top>
+                          <img src={hajj9} />
+                        </Slide>
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <Slide top>
+                          <img src={hajj10} />
+                        </Slide>
+                      </SvgIconBlock>
+                    </SvgIcon>
+                    <h4>Hajj & umrah</h4>
+                    <p>
+                      We are a company which have a colossal practice about
+                      Hajj, Umrah and visit to Holy places, we offer the
+                      unparalleled services to the pilgrims owing to have
+                      self-experience and preeminent acquaintance.
+                    </p>
+                  </div>
+                </Slide>
+              </WrapperRight>
+            </RowRight>
+          </Row>
+          <Row>
+            <RowLeft className="shadow-left">
+              <WrapperLeft>
+                <Slide bottom>
+                  <div className="div-block">
+                    <SvgIcon className="SvgIcon">
+                      <SvgTicketBlock>
+                        <SvgTicketIcon>
+                          <Slide bottom>
+                            <img src={ticket1} />
+                          </Slide>
+                        </SvgTicketIcon>
+                        <SvgTicketIcon>
+                          <Slide bottom>
+                            <img src={ticket2} />
+                          </Slide>
+                        </SvgTicketIcon>
+                      </SvgTicketBlock>
+                    </SvgIcon>
+                    <h4>Air Tickets</h4>
+                    <p>
+                      Being an accredited travel company we can provide travel
+                      documents for all the major Airlines. Our Company is
+                      equipped with latest reservation systems (GDS) where we
+                      can reserve, book and rebook flights according to your
+                      desires and commitments.
+                    </p>
+                  </div>
+                </Slide>
+              </WrapperLeft>
+            </RowLeft>
+            <RowRight>
+              <RowImage src={rightImage} />
+            </RowRight>
+          </Row>
+          <Row>
+            <RowLeft>
+              <RowImage src={leftImage} />
+            </RowLeft>
+            <RowRight>
+              <WrapperRight>
+                <Slide>
+                  <div className="div-block">
+                    <SvgIcon className="SvgIcon">
+                      <SvgIconBlock>
+                        <Slide top>
+                          <img src={hajj1} />
+                        </Slide>
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <Slide top>
+                          <img src={hajj2} left />
+                        </Slide>
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <Slide top>
+                          <img src={hajj3} right />
+                        </Slide>
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <img src={hajj4} left />
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <img src={hajj5} />
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <img src={hajj6} />
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <Slide top>
+                          <img src={hajj7} />
+                        </Slide>
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <Slide top>
+                          <img src={hajj8} />
+                        </Slide>
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <Slide top>
+                          <img src={hajj9} />
+                        </Slide>
+                      </SvgIconBlock>
+                      <SvgIconBlock>
+                        <Slide top>
+                          <img src={hajj10} />
+                        </Slide>
+                      </SvgIconBlock>
+                    </SvgIcon>
+                    <h4>Tour Packages</h4>
+                    <p>
+                      We are the travel company which offers various domestic
+                      and international tour packages service within your
+                      budget. We are specialized various Domestic &
+                      International tour Packages.
+                    </p>
+                  </div>
+                </Slide>
+              </WrapperRight>
+            </RowRight>
+          </Row>
         </Wrapper>
       </SubWrapper>
     </MainWrapper>
@@ -136,13 +256,144 @@ const UpAnimation = keyframes`${slideInUp}`;
 const DownAnimation = keyframes`${slideOutUp}`;
 const InDownAnimation = keyframes`${slideInDown}`;
 const BottomLeftAnimation = keyframes`${fadeInTopLeft}`;
+
+const SvgTicketBlock = styled.div`
+  position: relative;
+`;
+const SvgTicketIcon = styled.div`
+  position: relative;
+  &:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+`;
+const RowImage = styled.img`
+  max-width: 100%;
+`;
+const Row = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+`;
+const RowLeft = styled.div`
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  .div-block {
+    border-right: solid 1px #ffffff;
+    border-bottom: solid 1px #ffffff;
+    padding: 60px 20% 20px 20%;
+    margin: 0 -1px 0 0 !important;
+    width: 100%;
+  }
+`;
+const RowRight = styled.div`
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  .div-block {
+    border-left: solid 1px #ffffff;
+    border-bottom: solid 1px #ffffff;
+    padding: 60px 20% 20px 20%;
+    width: 100%;
+  }
+`;
+
+const SvgIconBlock = styled.div`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  &:nth-child(1) {
+    left: 20%;
+    max-width: 65px !important;
+    top: 0;
+    z-index: 0;
+  }
+  &:nth-child(2) {
+    left: calc(50% - 15px);
+    max-width: 40px !important;
+    bottom: 5px;
+    z-index: 3;
+  }
+  &:nth-child(3) {
+    left: calc(50% - -15px);
+    max-width: 20px !important;
+    bottom: 5px;
+    z-index: 5;
+  }
+  &:nth-child(4) {
+    left: 0;
+    max-width: 20% !important;
+    bottom: 0;
+    z-index: 0;
+  }
+  &:nth-child(5) {
+    left: 10%;
+    max-width: 18% !important;
+    bottom: 0;
+    z-index: 0;
+  }
+  &:nth-child(6) {
+    right: 0;
+    max-width: 45% !important;
+    bottom: 5%;
+    z-index: 0;
+    left: unset;
+  }
+  &:nth-child(7) {
+    max-width: 100% !important;
+    position: relative;
+    bottom: unset;
+    left: unset;
+    z-index: 2;
+  }
+  &:nth-child(8) {
+    width: 35% !important;
+    left: 30%;
+    z-index: 1;
+    bottom: 5px;
+  }
+  &:nth-child(9) {
+    left: calc(30% - -40px);
+    max-width: 15px !important;
+    bottom: 30%;
+    z-index: 0;
+  }
+  &:nth-child(10) {
+    left: calc(30% - -5px);
+    max-width: 15px !important;
+    bottom: 30%;
+    z-index: 0;
+  }
+`;
+const SvgIcon = styled.div`
+  display: flex;
+  max-width: 200px;
+  position: relative;
+  margin: 0 auto 15px 0;
+  align-items: flex-end;
+  height: 200px;
+  img {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+`;
 const WrapperRight = styled.div`
-  text-align: right;
-  padding: 60px 15% 10px 0;
-  background-image: url(${leftImage});
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+
+  /* background-image: url(${leftImage});
   background-size: contain;
   background-position: left center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   img {
     width: 20vw;
     max-width: 330px;
@@ -159,26 +410,29 @@ const WrapperRight = styled.div`
     font-family: "Rowdies";
     letter-spacing: 0.5px;
     transition: opacity 2.3s;
-    text-align: right;
+    margin: 0 0 5px 0;
   }
   p {
     color: #252525;
-    line-height: 2;
+    line-height: 2.2;
     letter-spacing: 0.2px;
     font-family: "Rubik";
-    font-size: 16px;
-    max-width: 700px;
-    text-align: right;
-    margin: 0 0 0 auto;
+    font-size: 20px;
+    max-width: 500px;
+    text-align: left;
+    margin: 0;
+    padding: 20px 0 0 0;
+    font-weight: 600;
   }
 `;
 const WrapperLeft = styled.div`
-  text-align: left;
-  padding: 60px 0 10px 15%;
-  background-image: url(${rightImage});
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  /* background-image: url(${rightImage});
   background-size: contain;
   background-position: right center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   img {
     width: 20vw;
     max-width: 330px;
@@ -195,14 +449,19 @@ const WrapperLeft = styled.div`
     font-family: "Rowdies";
     letter-spacing: 0.5px;
     transition: opacity 2.3s;
+    margin: 0 0 5px 0;
   }
   p {
     color: #252525;
-    line-height: 2;
+    line-height: 2.2;
     letter-spacing: 0.2px;
     font-family: "Rubik";
-    font-size: 16px;
-    max-width: 700px;
+    font-size: 20px;
+    max-width: 500px;
+    text-align: left;
+    margin: 0;
+    padding: 20px 0 0 0;
+    font-weight: 600;
   }
 `;
 const TextBlock = styled.div``;

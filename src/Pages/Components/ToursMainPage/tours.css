@@ -1,83 +1,88 @@
 .main {
-  position: relative;
-  background-color: #333;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+    position: relative;
+    background-color: #333;
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
-::selection{
+
+::selection {
     background-color: #0b372dbb;
 }
+
 .paralax {
-  pointer-events: none;
-  transition: 0.45s;
- 
+    pointer-events: none;
+    transition: 0.45s;
 }
+
 .bg-img {
-  position: absolute;
-  width: 2800px;
-  top: calc(50% - 390px);
-  left: calc(50% + 10px);
-
-  z-index: 1;
+    position: absolute;
+    width: 2800px;
+    top: calc(50% - 390px);
+    left: calc(50% + 10px);
+    z-index: 1;
 }
+
 .fog-7 {
-  position: absolute;
-  width: 1900px;
-  top: calc(50% - 100px);
-  left: calc(50% + 300px);
-
-  z-index: 2;
+    position: absolute;
+    width: 1900px;
+    top: calc(50% - 100px);
+    left: calc(50% + 300px);
+    z-index: 2;
 }
+
 .mountain-10 {
-  position: absolute;
-  width: 892px;
-  top: calc(50% + 69px);
-  left: calc(50% + 230px);
-
-  z-index: 3;
+    position: absolute;
+    width: 892px;
+    top: calc(50% + 69px);
+    left: calc(50% + 230px);
+    z-index: 3;
 }
+
 .fog-6 {
-  position: absolute;
-  width: 1610px;
-  top: calc(50% + 85px);
-  left: calc(50% + 10px);
-
-  z-index: 4;
+    position: absolute;
+    width: 1610px;
+    top: calc(50% + 85px);
+    left: calc(50% + 10px);
+    z-index: 4;
 }
+
 .mountain-9 {
-  position: absolute;
-  width: 470px;
-  top: calc(50% + 113px);
-  left: calc(50% - 457px);
-
-  z-index: 5;
+    position: absolute;
+    width: 470px;
+    top: calc(50% + 113px);
+    left: calc(50% - 457px);
+    z-index: 5;
 }
+
 .mountain-8 {
-  position: absolute;
-  width: 810px;
-  top: calc(50% + 86px);
-  left: calc(50% - 202px);
-
-  z-index: 6;
+    position: absolute;
+    width: 810px;
+    top: calc(50% + 86px);
+    left: calc(50% - 202px);
+    z-index: 6;
 }
+
 .fog-5 {
-  position: absolute;
-  width: 450px;
-  top: calc(50% + 160px);
-  left: calc(50% + 20px);
-
-  z-index: 7;
+    position: absolute;
+    width: 450px;
+    top: calc(50% + 160px);
+    left: calc(50% + 20px);
+    z-index: 7;
 }
+
+
 /* chnged */
-.mountain-7 {
-  position: absolute;
-  width: 538px;
-  top: calc(50% + 123px);
-  left: calc(50% + 305px);
 
-  z-index: 8;
+.mountain-7 {
+    position: absolute;
+    width: 538px;
+    top: calc(50% + 123px);
+    left: calc(50% + 305px);
+    z-index: 8;
 }
+
+
 /* .mountain-7 {
     position: absolute;
     width: 408px;
@@ -86,136 +91,137 @@
   
     z-index: 8;
   } */
+
 .text {
-  position: absolute;
-  z-index: 9;
-  top: calc(50% - 130px);
-  left: 50%;
-  pointer-events: auto;
-
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
+    position: absolute;
+    z-index: 9;
+    top: calc(50% - 130px);
+    left: 50%;
+    pointer-events: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
 }
+
 .text h2 {
-  font-weight: 100;
-  font-size: 6.5rem;
-
+    font-weight: 100;
+    font-size: 6.5rem;
 }
+
 .text h1 {
-  font-weight: 600;
-  font-size: 8rem;
-  line-height: 0.88;
-
+    font-weight: 600;
+    font-size: 8rem;
+    line-height: 0.88;
 }
+
 .mountain-6 {
-  position: absolute;
-  width: 408px;
-  top: calc(50% + 60px);
-  left: calc(50% + 590px);
-
-  z-index: 10;
+    position: absolute;
+    width: 408px;
+    top: calc(50% + 60px);
+    left: calc(50% + 590px);
+    z-index: 10;
 }
+
 .fog-4 {
-  position: absolute;
-  width: 590px;
-  top: calc(50% + 223px);
-  left: calc(50% - 60px);
-
-  z-index: 11;
+    position: absolute;
+    width: 590px;
+    top: calc(50% + 223px);
+    left: calc(50% - 60px);
+    z-index: 11;
 }
+
+
 /* 590->100 */
+
 .mountain-5 {
-  position: absolute;
-  width: 625px;
-  top: calc(50% + 250px);
-  left: calc(50% + 100px);
-
-  z-index: 12;
+    position: absolute;
+    width: 625px;
+    top: calc(50% + 250px);
+    left: calc(50% + 100px);
+    z-index: 12;
 }
+
 .fog-3 {
-  position: absolute;
-  width: 1600px;
-  top: calc(50% + 110px);
-  left: calc(50% - 15px);
-
-  z-index: 13;
+    position: absolute;
+    width: 1600px;
+    top: calc(50% + 110px);
+    left: calc(50% - 15px);
+    z-index: 13;
 }
+
 .mountain-4 {
-  position: absolute;
-  width: 780px;
-  top: calc(50% + 220px);
-  left: calc(50% - 381.5px);
-
-  z-index: 14;
+    position: absolute;
+    width: 780px;
+    top: calc(50% + 220px);
+    left: calc(50% - 381.5px);
+    z-index: 14;
 }
+
 .mountain-3 {
-  position: absolute;
-  width: 484px;
-  top: calc(50% + 94px);
-  left: calc(50% + 740px);
-
-  z-index: 15;
+    position: absolute;
+    width: 484px;
+    top: calc(50% + 94px);
+    left: calc(50% + 740px);
+    z-index: 15;
 }
+
 .fog-2 {
-  position: absolute;
-  width: 1560px;
-  top: calc(50% + 147px);
-  left: calc(50% - 30px);
-
-  z-index: 16;
+    position: absolute;
+    width: 1560px;
+    top: calc(50% + 147px);
+    left: calc(50% - 30px);
+    z-index: 16;
 }
+
 .mountain-2 {
-  position: absolute;
-  width: 690px;
-  top: calc(50% + 154px);
-  left: calc(50% + 412px);
-
-  z-index: 17;
+    position: absolute;
+    width: 690px;
+    top: calc(50% + 154px);
+    left: calc(50% + 412px);
+    z-index: 17;
 }
+
 .mountain-1 {
-  position: absolute;
-  width: 530px;
-  top: calc(50% + 17px);
-  left: calc(50% - 601px);
-
-  z-index: 18;
+    position: absolute;
+    width: 530px;
+    top: calc(50% + 17px);
+    left: calc(50% - 601px);
+    z-index: 18;
 }
+
 .sun-rays {
-  position: absolute;
-  z-index: 19;
-  top: 0;
-  right: 0;
-  width: 595px;
-  pointer-events: none;
+    position: absolute;
+    z-index: 19;
+    top: 0;
+    right: 0;
+    width: 595px;
+    pointer-events: none;
 }
-.black-shadow {
-  position: absolute;
-  z-index: 20;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  pointer-events: none;
-}
-.fog-1 {
-  position: absolute;
-  width: 1600px;
-  top: calc(100% - 355px);
-  left: 50%;
 
-  z-index: 21;
+.black-shadow {
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
 }
+
+.fog-1 {
+    position: absolute;
+    width: 1600px;
+    top: calc(100% - 355px);
+    left: 50%;
+    z-index: 21;
+}
+
 .vingnette {
-  position: absolute;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: radial-gradient(
-    ellipse at center,
-    rgba(0, 0, 0, 0) 65%,
-    rgba(0, 0, 0, 0.7)
-  );
-  pointer-events: none;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: radial-gradient( ellipse at center, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.7));
+    pointer-events: none;
 }

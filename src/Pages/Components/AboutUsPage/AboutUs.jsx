@@ -125,7 +125,7 @@ const MainWrapper = styled.div`
   overflow-x: hidden;
   max-width: 100%;
   margin: 0 auto;
-  background-image: url(${topImage});
+  /* background-image: url(${topImage}); */
   @media (min-width: 320px) and (max-width: 1200px) {
     display: block;
   }
