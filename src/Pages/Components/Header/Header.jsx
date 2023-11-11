@@ -96,7 +96,7 @@ const Overlay = styled.div`
   z-index: 9999;
   height: ${(props) => (props.open ? "100vh" : 0)};
   width: 100%;
-  background: #FAFAFA;
+  background: #fafafa;
   transition: height 0.4s ease-in-out;
 `;
 
@@ -180,53 +180,52 @@ const Header = () => {
   return (
     <MainWrapper className={`${scrollFixed ? "fixed" : ""}`}>
       {/* <Slide top> */}
-        <Wrapper ref={containerRef}>
-          <HeaderWrapper>
-            <HeaderLogo>
-              <img src={Logo} />
-            </HeaderLogo>
-            <HeaderMenu>
-              <MenuBlock>
-                <HeaderUl>
-                  <HeaderLi>
-                    <img src={img1} alt="" />
-                  </HeaderLi>
-                  <HeaderLi>
-                    <img src={img2} alt="" />
-                  </HeaderLi>
-                  <HeaderLi>
-                    <img src={img3} alt="" />
-                  </HeaderLi>
-                  <HeaderLi>
-                    <img src={img4} alt="" />
-                  </HeaderLi>
-                  <HeaderLi>
-                    <img src={img5} alt="" />
-                  </HeaderLi>
-                  <HeaderLi>
-                    <img src={img6} alt="" />
-                  </HeaderLi>
-                </HeaderUl>
-                <p>(Approved by Govt. of India, Ministry of Tourism)</p>
-              </MenuBlock>
-              <HeaderBar>
-                Menu{" "}
-                <NavIcon onClick={() => toggleNav(!toggle)}>
-                  <Line open={toggle} />
-                  <Line open={toggle} />
-                  <Line open={toggle} />
-                </NavIcon>
-              </HeaderBar>
-            </HeaderMenu>
-          </HeaderWrapper>
-        </Wrapper>
+      <Wrapper ref={containerRef}>
+        <HeaderWrapper>
+          <HeaderLogo>
+            <img src={Logo} />
+          </HeaderLogo>
+          <HeaderMenu>
+            <MenuBlock>
+              <HeaderUl>
+                <HeaderLi>
+                  <img src={img1} alt="" />
+                </HeaderLi>
+                <HeaderLi>
+                  <img src={img2} alt="" />
+                </HeaderLi>
+                <HeaderLi>
+                  <img src={img3} alt="" />
+                </HeaderLi>
+                <HeaderLi>
+                  <img src={img4} alt="" />
+                </HeaderLi>
+                <HeaderLi>
+                  <img src={img5} alt="" />
+                </HeaderLi>
+                <HeaderLi>
+                  <img src={img6} alt="" />
+                </HeaderLi>
+              </HeaderUl>
+              <p>(Approved by Govt. of India, Ministry of Tourism)</p>
+            </MenuBlock>
+            <HeaderBar>
+              Menu{" "}
+              <NavIcon onClick={() => toggleNav(!toggle)}>
+                <Line open={toggle} />
+                <Line open={toggle} />
+                <Line open={toggle} />
+              </NavIcon>
+            </HeaderBar>
+          </HeaderMenu>
+        </HeaderWrapper>
+      </Wrapper>
       {/* </Slide> */}
       <Overlay open={toggle}>
         <OverlayMenu open={toggle}>
           <Item>
             <Link href="/inner-page">Inner Page</Link>
           </Item>
-
           <Item onClick={handleClose}>
             <CloseIcon src={times} alt="" />
           </Item>
@@ -237,13 +236,13 @@ const Header = () => {
 };
 
 const CloseIcon = styled.img`
-    max-width: 35px;
-    display: inline-flex;
-    align-items: center;
-    border-radius: 50%;
-    padding: 13px;
-    opacity: 0.8;
-    cursor: pointer;
+  max-width: 35px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 50%;
+  padding: 13px;
+  opacity: 0.8;
+  cursor: pointer;
 `;
 const MenuBlock = styled.div``;
 const HeaderBar = styled.div`

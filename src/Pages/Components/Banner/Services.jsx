@@ -47,6 +47,7 @@ import t2 from "./assets/img/t/2.svg";
 import t3 from "./assets/img/t/3.svg";
 import t4 from "./assets/img/t/4.svg";
 import t5 from "./assets/img/t/5.svg";
+import c1 from "./assets/img/c1.png";
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(-1);
   useEffect(() => {
@@ -430,9 +431,8 @@ const WrapperRight = styled.div`
   h4 {
     font-size: 4rem;
     font-weight: 700;
-    text-transform: capitalize;
-    color: #252525;
-    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: #ffffff;
     text-align: left;
     font-family: "Rowdies";
     letter-spacing: 0.5px;
@@ -440,16 +440,16 @@ const WrapperRight = styled.div`
     margin: 0 0 5px 0;
   }
   p {
-    color: #252525;
-    line-height: 2.2;
-    letter-spacing: 0.2px;
+    color: #ffffff;
+    line-height: 1.8;
+    letter-spacing: 0;
     font-family: "Rubik";
     font-size: 20px;
     max-width: 500px;
     text-align: left;
     margin: 0;
     padding: 20px 0 0 0;
-    font-weight: 600;
+    font-weight: 500;
   }
 `;
 const WrapperLeft = styled.div`
@@ -469,9 +469,8 @@ const WrapperLeft = styled.div`
   h4 {
     font-size: 4rem;
     font-weight: 700;
-    text-transform: capitalize;
-    color: #252525;
-    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: #ffffff;
     text-align: left;
     font-family: "Rowdies";
     letter-spacing: 0.5px;
@@ -479,16 +478,16 @@ const WrapperLeft = styled.div`
     margin: 0 0 5px 0;
   }
   p {
-    color: #252525;
-    line-height: 2.2;
-    letter-spacing: 0.2px;
+    color: #ffffff;
+    line-height: 1.8;
+    letter-spacing: 0;
     font-family: "Rubik";
     font-size: 20px;
     max-width: 500px;
     text-align: left;
     margin: 0;
     padding: 20px 0 0 0;
-    font-weight: 600;
+    font-weight: 500;
   }
 `;
 const TextBlock = styled.div``;

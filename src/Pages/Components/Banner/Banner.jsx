@@ -28,6 +28,11 @@ import "@fontsource/rowdies/400.css"; // Specify weight
 import cloudImage from "./assets/img/bg.png";
 import planeImage from "./assets/img/plane.png";
 import BannerClouds from "../BannerClouds/BannerClouds";
+
+import "@fontsource/dm-serif-display"; // Defaults to weight 400
+import "@fontsource/dm-serif-display/400.css"; // Specify weight
+import "@fontsource/dm-serif-display/400-italic.css"; // Specify weight and style
+
 const Banner = () => {
   const [isScrolled, setIsScrolled] = useState(-1);
   useEffect(() => {
@@ -63,7 +68,7 @@ const Banner = () => {
   const rotate = 1 + scrollY * 0.0009;
   return (
     <MainWrapper>
-      <BannerClouds/>
+      <BannerClouds />
       <SubWrapper>
         <Wrapper>
           <PlaneWrapperMain>
@@ -101,7 +106,14 @@ const Banner = () => {
             </ButtonWrapper> */}
           </PlaneWrapperMain>
           <Text>
-            <Text1
+            <div class="wrapper one">
+              <div class="drop-main">
+                <div class="d">S</div>
+                <div class="r">U</div>
+                <div class="o">N</div>
+              </div>
+            </div>
+            {/* <Text1
               className={`${
                 isScrolled === 1
                   ? "topScroll"
@@ -133,7 +145,7 @@ const Banner = () => {
               }`}
             >
               N
-            </Text3>
+            </Text3> */}
             {/* <Text4
               className={`${
                 isScrolled === 1
@@ -547,6 +559,62 @@ const Wrapper = styled.div({
   color: "grey",
 });
 const MainWrapper = styled.div`
+  .drop-main {
+    display: flex;
+    font-size: 7rem;
+    margin: 1.5rem;
+    justify-content: center;
+    font-family: "Russo One", sans-serif;
+    display: flex;
+    font-size: 30vw;
+    font-family: "Rowdies";
+    color: #252525;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: -5.5px;
+  }
+  .d {
+    opacity: 0;
+    animation: drop 0.4s linear forwards;
+  }
+  .r {
+    opacity: 0;
+    animation: drop 0.4s linear forwards 0.2s;
+  }
+  .o {
+    opacity: 0;
+    animation: drop 0.4s linear forwards 0.4s;
+  }
+  .p {
+    opacity: 0;
+    animation: drop 0.4s linear forwards 0.6s;
+  }
+  .s {
+    opacity: 0;
+    animation: drop 0.4s linear forwards 0.8s;
+  }
+  @keyframes drop {
+    0% {
+      transform: translateY(-200px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    65% {
+      transform: translateY(-17px);
+      opacity: 1;
+    }
+    75% {
+      transform: translateY(-22px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
 `;
 const SubWrapper = styled.div({
   minHeight: "100vh",
