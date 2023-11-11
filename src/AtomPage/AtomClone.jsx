@@ -19,7 +19,7 @@ function AtomClone() {
   );
 
   return (
-    <>
+    <div style={{ height: "100vh" }}>
       <Canvas>
         <color attach="background" args={["#ececec"]} />
         <ScrollControls
@@ -41,7 +41,7 @@ function AtomClone() {
         {effects}
       </Canvas>
       <Overlay />
-    </>
+    </div>
   );
 }
 

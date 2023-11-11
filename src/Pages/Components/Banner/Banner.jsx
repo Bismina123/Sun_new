@@ -110,7 +110,7 @@ const Banner = () => {
                   : ""
               }`}
             >
-              A
+              S
             </Text1>
             <Text2
               className={`${
@@ -121,7 +121,7 @@ const Banner = () => {
                   : ""
               }`}
             >
-              d
+              U
             </Text2>
             <Text3
               className={`${
@@ -132,9 +132,9 @@ const Banner = () => {
                   : ""
               }`}
             >
-              v
+              N
             </Text3>
-            <Text4
+            {/* <Text4
               className={`${
                 isScrolled === 1
                   ? "topScroll"
@@ -311,7 +311,7 @@ const Banner = () => {
               }`}
             >
               e
-            </Text1>
+            </Text1> */}
           </Text>
           <TextBlock>
             <SmallText
@@ -518,7 +518,7 @@ const TextEmpty = styled.div`
 const SmallText = styled.div`
   text-align: left;
   font-size: 30px;
-  margin: 40px 0 0 0;
+  margin: 20px 0 0 0;
   font-family: "Rubik";
   color: #252525;
   max-width: 300px;
@@ -536,9 +536,9 @@ const SmallText = styled.div`
 
 const Text = styled.div`
   display: flex;
-  font-size: 5vw;
+  font-size: 30vw;
   font-family: "Rowdies";
-  color: #607d8b;
+  color: #252525;
   position: relative;
   text-transform: uppercase;
   letter-spacing: -5.5px;

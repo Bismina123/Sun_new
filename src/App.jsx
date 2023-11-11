@@ -10,6 +10,7 @@ import Footer from "./Pages/Components/Banner/Footer";
 import AtomClone from "./AtomPage/AtomClone";
 import ToursMainPage from "./Pages/Components/ToursMainPage/ToursMainPage";
 import Airoplane from "./Pages/Components/Airoplane3d/Airoplane";
+import { LandingPage } from "./Pages/Components/LandingPage/LandingPage";
 
 function App() {
   return (
@@ -18,31 +19,11 @@ function App() {
         <Routes>
           <Route element={<AtomClone />} path="/inner-page" />
           <Route element={<ToursMainPage />} path="/tours-page" />
+          <Route element={<LandingPage />} path="/" />
         </Routes>
       </BrowserRouter>
-      <LandingPage>
-          <Header />
-          <Airoplane/>
-        <Landing>
-          <Banner />
-          <AboutUs />
-          <WhatweDo />
-          <Services />
-          <Footer />
-        </Landing>
-      </LandingPage>
     </>
   );
 }
-const Landing = styled.div`
-  background-image: linear-gradient(
-    to right top,
-    #ffffff,
-    #eff2ff,
-    #d7e7ff,
-    #b7deff,
-    #8dd6fd
-  );
-`;
-const LandingPage = styled.div``;
+
 export default App;
