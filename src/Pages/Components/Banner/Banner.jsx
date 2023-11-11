@@ -68,14 +68,14 @@ const Banner = () => {
         <Wrapper>
           <PlaneWrapperMain>
             {/* <PlaneWrapper style={{ transform: `scale(${scale})` }}> */}
-            <PlaneWrapper
+            {/* <PlaneWrapper
               style={{
                 transform: `scale(${scale}) translateX(${translateY}px) translateY(${translateY}px) rotate(${rotate}deg)`,
               }}
             >
               <ImgWrapper src={planeImage} />
-            </PlaneWrapper>
-            <ButtonWrapper>
+            </PlaneWrapper> */}
+            {/* <ButtonWrapper>
               <Button
                 className={`${
                   isScrolled === 1
@@ -98,7 +98,7 @@ const Banner = () => {
               >
                 Whats New!
               </Button>
-            </ButtonWrapper>
+            </ButtonWrapper> */}
           </PlaneWrapperMain>
           <Text>
             <Text1

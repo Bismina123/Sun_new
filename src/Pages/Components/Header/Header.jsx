@@ -16,6 +16,7 @@ import img3 from "./assets/img/3.png";
 import img4 from "./assets/img/4.png";
 import img5 from "./assets/img/5.png";
 import img6 from "./assets/img/6.png";
+import times from "./assets/img/times.svg";
 import styled from "styled-components";
 import Slide from "react-reveal/Slide";
 
@@ -43,14 +44,15 @@ const Menu = styled.ul`
   }
 `;
 
-const Item = styled.li``;
-
+const Item = styled.li`
+  font-family: "Rowdies";
+  text-align: center;
+`;
 const Link = styled.a`
-  color: white;
+  color: #252525;
   text-decoration: none;
-
-  :hover {
-    text-decoration: underline;
+  &:hover {
+    text-decoration: underline !important;
   }
 `;
 
@@ -79,7 +81,7 @@ const Line = styled.span`
   background-color: #252525;
   transition: max-width 0.4s ease-in-out;
   cursor: pointer;
-  
+
   &:nth-child(2) {
     -ms-flex: 0 0 ${(props) => (props.open ? "40%" : "70%")};
     flex: 0 0 ${(props) => (props.open ? "40%" : "70%")};
@@ -94,7 +96,7 @@ const Overlay = styled.div`
   z-index: 9999;
   height: ${(props) => (props.open ? "100vh" : 0)};
   width: 100%;
-  background: #1c2022;
+  background: #FAFAFA;
   transition: height 0.4s ease-in-out;
 `;
 
@@ -172,7 +174,9 @@ const Header = () => {
       ease: "power2.out", // You can adjust the easing function
     });
   }, []);
-
+  const handleClose = () => {
+    toggleNav(false);
+  };
   return (
     <MainWrapper className={`${scrollFixed ? "fixed" : ""}`}>
       <Slide top>
@@ -217,29 +221,30 @@ const Header = () => {
           </HeaderWrapper>
         </Wrapper>
       </Slide>
-      {/* <Overlay open={toggle}>
+      <Overlay open={toggle}>
         <OverlayMenu open={toggle}>
           <Item>
-            <Link target="#" href="https://www.instagram.com/igor_dumencic/">
-              Instagram
-            </Link>
+            <Link href="/inner-page">Inner Page</Link>
           </Item>
-          <Item>
-            <Link target="#" href="https://www.behance.net/igordumencic">
-              Behance
-            </Link>
-          </Item>
-          <Item>
-            <Link target="#" href="https://github.com/Igor178">
-              Github
-            </Link>
+
+          <Item onClick={handleClose}>
+            <CloseIcon src={times} alt="" />
           </Item>
         </OverlayMenu>
-      </Overlay> */}
+      </Overlay>
     </MainWrapper>
   );
 };
 
+const CloseIcon = styled.img`
+    max-width: 35px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 50%;
+    padding: 13px;
+    opacity: 0.8;
+    cursor: pointer;
+`;
 const MenuBlock = styled.div``;
 const HeaderBar = styled.div`
   font-family: "Rowdies";
