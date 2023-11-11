@@ -331,6 +331,11 @@
   "resolved" "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.1.6.tgz"
   "version" "0.1.6"
 
+"@fontsource/dm-serif-display@^5.0.17":
+  "integrity" "sha512-CaJv6rHI6QlNkiT1PnpuICu9Be7u1ia88YY0/a4mHxiC9c5RikkQaAfppWajs/HMwUit+bnCQPtOkop2vuPxFw=="
+  "resolved" "https://registry.npmjs.org/@fontsource/dm-serif-display/-/dm-serif-display-5.0.17.tgz"
+  "version" "5.0.17"
+
 "@fontsource/kanit@^5.0.17":
   "integrity" "sha512-urioYe+h/lswhNFH5aYZM+y60h49OdyMwOfCWNbXItn8v65naknqjvhX1UaLEP/ATAenJieqW11RqKH4gf9fWA=="
   "resolved" "https://registry.npmjs.org/@fontsource/kanit/-/kanit-5.0.17.tgz"
