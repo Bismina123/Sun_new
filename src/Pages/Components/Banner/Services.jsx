@@ -42,6 +42,11 @@ import hajj9 from "./assets/img/hajj/10.svg";
 import hajj10 from "./assets/img/hajj/11.svg";
 import ticket1 from "./assets/img/tour/t1.svg";
 import ticket2 from "./assets/img/tour/t2.svg";
+import t1 from "./assets/img/t/1.svg";
+import t2 from "./assets/img/t/2.svg";
+import t3 from "./assets/img/t/3.svg";
+import t4 from "./assets/img/t/4.svg";
+import t5 from "./assets/img/t/5.svg";
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(-1);
   useEffect(() => {
@@ -188,52 +193,33 @@ const Services = () => {
               <WrapperRight>
                 <Slide>
                   <div className="div-block">
-                    <SvgIcon className="SvgIcon">
-                      <SvgIconBlock>
+                    <SvgTourIcon className="SvgIcon">
+                      <SvgTourIconBlock>
                         <Slide top>
-                          <img src={hajj1} />
+                          <img src={t1} />
                         </Slide>
-                      </SvgIconBlock>
-                      <SvgIconBlock>
+                      </SvgTourIconBlock>
+                      <SvgTourIconBlock>
                         <Slide top>
-                          <img src={hajj2} left />
+                          <img src={t2} left />
                         </Slide>
-                      </SvgIconBlock>
-                      <SvgIconBlock>
+                      </SvgTourIconBlock>
+                      <SvgTourIconBlock>
                         <Slide top>
-                          <img src={hajj3} right />
+                          <img src={t3} right />
                         </Slide>
-                      </SvgIconBlock>
-                      <SvgIconBlock>
-                        <img src={hajj4} left />
-                      </SvgIconBlock>
-                      <SvgIconBlock>
-                        <img src={hajj5} />
-                      </SvgIconBlock>
-                      <SvgIconBlock>
-                        <img src={hajj6} />
-                      </SvgIconBlock>
-                      <SvgIconBlock>
+                      </SvgTourIconBlock>
+                      <SvgTourIconBlock>
                         <Slide top>
-                          <img src={hajj7} />
+                          <img src={t4} right />
                         </Slide>
-                      </SvgIconBlock>
-                      <SvgIconBlock>
+                      </SvgTourIconBlock>
+                      <SvgTourIconBlock>
                         <Slide top>
-                          <img src={hajj8} />
+                          <img src={t5} right />
                         </Slide>
-                      </SvgIconBlock>
-                      <SvgIconBlock>
-                        <Slide top>
-                          <img src={hajj9} />
-                        </Slide>
-                      </SvgIconBlock>
-                      <SvgIconBlock>
-                        <Slide top>
-                          <img src={hajj10} />
-                        </Slide>
-                      </SvgIconBlock>
-                    </SvgIcon>
+                      </SvgTourIconBlock>
+                    </SvgTourIcon>
                     <h4>Tour Packages</h4>
                     <p>
                       We are the travel company which offers various domestic
@@ -257,6 +243,47 @@ const DownAnimation = keyframes`${slideOutUp}`;
 const InDownAnimation = keyframes`${slideInDown}`;
 const BottomLeftAnimation = keyframes`${fadeInTopLeft}`;
 
+const SvgTourIcon = styled.div`
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  max-width: 115px;
+  height: auto;
+  div {
+    max-width: 90px;
+    &:nth-child(1) {
+      position: absolute;
+      left: -25%;
+      bottom: 25%;
+    }
+    &:nth-child(2) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      width: 50%;
+    }
+    &:nth-child(3) {
+      position: relative;
+      padding: 0 0 0 25px;
+    }
+    &:nth-child(4) {
+      position: absolute;
+      left: -5%;
+      bottom: 0;
+    }
+    &:nth-child(5) {
+      position: absolute;
+      left: 10%;
+      bottom: 30%;
+      width: 50%;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+`;
+const SvgTourIconBlock = styled.div``;
 const SvgTicketBlock = styled.div`
   position: relative;
 `;
