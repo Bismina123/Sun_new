@@ -13,15 +13,15 @@ import {
   fadeInTopLeft,
 } from "react-animations";
 import topImage from "../Banner/assets/img/top.png";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 
-import Bounce from "react-reveal/Bounce";
+// import Bounce from "react-reveal/Bounce";
 const AboutUs = () => {
   const [isScrolled, setIsScrolled] = React.useState(-1);
   return (
     <MainWrapper className="relative z-0">
       <motion.div variants={slideIn("left", "tween", 0.2, 1)}>
-        <Fade bottom cascade duration={2000}>
+        {/* <Fade bottom cascade duration={2000}> */}
           <MainText
             className={`aboutUsText ${
               isScrolled === 1
@@ -36,8 +36,8 @@ const AboutUs = () => {
             <br />
             travelling
           </MainText>
-        </Fade>
-        <Fade right cascade duration={3000}>
+        {/* </Fade> */}
+        {/* <Fade right cascade duration={3000}> */}
           <Paragraph
             className={`${
               isScrolled === 1
@@ -55,16 +55,16 @@ const AboutUs = () => {
             measures taken in-house to ensure a safe and delightful travel
             experience for our customers.
           </Paragraph>
-        </Fade>
+        {/* </Fade> */}
       </motion.div>
-      <Bounce bottom duration={4000}>
+      {/* <Bounce bottom duration={4000}> */}
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
           className="xl:flex-1 earth-3d-styles"
         >
           <EarthCanvas />
         </motion.div>
-      </Bounce>
+      {/* </Bounce> */}
     </MainWrapper>
   );
 };

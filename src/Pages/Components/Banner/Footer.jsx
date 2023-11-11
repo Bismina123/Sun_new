@@ -25,13 +25,13 @@ import "@fontsource/rubik/400-italic.css"; // Specify weight and style
 import "@fontsource/rowdies"; // Defaults to weight 400
 import "@fontsource/rowdies/400.css"; // Specify weight
 // import "@fontsource/rowdies/400-italic.css"; // Specify weight and style
-import Flip from 'react-reveal/Flip';
+// import Flip from 'react-reveal/Flip';
 const Footer = () => {
   return (
-    <Wrapper>
-         <Flip>
+    <Wrapper id="footer">
+         {/* <Flip> */}
       <Title>Try the world with us</Title>
-      </Flip>
+      {/* </Flip> */}
     </Wrapper>
   );
 };

@@ -6,9 +6,9 @@
     overflow: hidden;
 }
 
-::selection {
+/* ::selection {
     background-color: #0b372dbb;
-}
+} */
 
 .paralax {
     pointer-events: none;

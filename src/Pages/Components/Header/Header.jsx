@@ -18,7 +18,7 @@ import img5 from "./assets/img/5.png";
 import img6 from "./assets/img/6.png";
 import times from "./assets/img/times.svg";
 import styled from "styled-components";
-import Slide from "react-reveal/Slide";
+// import Slide from "react-reveal/Slide";
 
 const Title = styled.h1`
   font-size: 25px;
@@ -179,7 +179,7 @@ const Header = () => {
   };
   return (
     <MainWrapper className={`${scrollFixed ? "fixed" : ""}`}>
-      <Slide top>
+      {/* <Slide top> */}
         <Wrapper ref={containerRef}>
           <HeaderWrapper>
             <HeaderLogo>
@@ -220,7 +220,7 @@ const Header = () => {
             </HeaderMenu>
           </HeaderWrapper>
         </Wrapper>
-      </Slide>
+      {/* </Slide> */}
       <Overlay open={toggle}>
         <OverlayMenu open={toggle}>
           <Item>
@@ -261,7 +261,7 @@ const MainWrapper = styled.div`
   justify-content: space-around;
   width: 100%;
   /* background: rgb(255 255 255 / 20%); */
-  z-index: 1;
+  z-index: 3;
   top: 0;
   left: 0;
   right: 0;

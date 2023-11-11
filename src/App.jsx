@@ -9,6 +9,7 @@ import Services from "./Pages/Components/Banner/Services";
 import Footer from "./Pages/Components/Banner/Footer";
 import AtomClone from "./AtomPage/AtomClone";
 import ToursMainPage from "./Pages/Components/ToursMainPage/ToursMainPage";
+import Airoplane from "./Pages/Components/Airoplane3d/Airoplane";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       </BrowserRouter>
       <LandingPage>
           <Header />
+          <Airoplane/>
         <Landing>
           <Banner />
           <AboutUs />

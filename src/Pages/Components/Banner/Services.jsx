@@ -29,7 +29,7 @@ import hajjImage from "./assets/img/hajj.png";
 import planeImage from "./assets/img/plane.png";
 import leftImage from "./assets/img/left.png";
 import rightImage from "./assets/img/right.png";
-import Slide from "react-reveal/Slide";
+// import Slide from "react-reveal/Slide";
 import hajj1 from "./assets/img/hajj/2.svg";
 import hajj2 from "./assets/img/hajj/3.svg";
 import hajj3 from "./assets/img/hajj/4.svg";
@@ -90,23 +90,23 @@ const Services = () => {
             </RowLeft>
             <RowRight className="shadow-right">
               <WrapperRight>
-                <Slide>
+                {/* <Slide> */}
                   <div className="div-block">
                     <SvgIcon className="SvgIcon">
                       <SvgIconBlock>
-                        <Slide top>
+                        {/* <Slide top> */}
                           <img src={hajj1} />
-                        </Slide>
+                        {/* </Slide> */}
                       </SvgIconBlock>
                       <SvgIconBlock>
-                        <Slide top>
+                        {/* <Slide top> */}
                           <img src={hajj2} left />
-                        </Slide>
+                        {/* </Slide> */}
                       </SvgIconBlock>
                       <SvgIconBlock>
-                        <Slide top>
+                        {/* <Slide top> */}
                           <img src={hajj3} right />
-                        </Slide>
+                        {/* </Slide> */}
                       </SvgIconBlock>
                       <SvgIconBlock>
                         <img src={hajj4} left />
@@ -118,24 +118,24 @@ const Services = () => {
                         <img src={hajj6} />
                       </SvgIconBlock>
                       <SvgIconBlock>
-                        <Slide top>
+                        {/* <Slide top> */}
                           <img src={hajj7} />
-                        </Slide>
+                        {/* </Slide> */}
                       </SvgIconBlock>
                       <SvgIconBlock>
-                        <Slide top>
+                        {/* <Slide top> */}
                           <img src={hajj8} />
-                        </Slide>
+                        {/* </Slide> */}
                       </SvgIconBlock>
                       <SvgIconBlock>
-                        <Slide top>
+                        {/* <Slide top> */}
                           <img src={hajj9} />
-                        </Slide>
+                        {/* </Slide> */}
                       </SvgIconBlock>
                       <SvgIconBlock>
-                        <Slide top>
+                        {/* <Slide top> */}
                           <img src={hajj10} />
-                        </Slide>
+                        {/* </Slide> */}
                       </SvgIconBlock>
                     </SvgIcon>
                     <h4>Hajj & umrah</h4>
@@ -146,26 +146,26 @@ const Services = () => {
                       self-experience and preeminent acquaintance.
                     </p>
                   </div>
-                </Slide>
+                {/* </Slide> */}
               </WrapperRight>
             </RowRight>
           </Row>
           <Row>
             <RowLeft className="shadow-left">
               <WrapperLeft>
-                <Slide bottom>
+                {/* <Slide bottom> */}
                   <div className="div-block">
                     <SvgIcon className="SvgIcon">
                       <SvgTicketBlock>
                         <SvgTicketIcon>
-                          <Slide bottom>
+                          {/* <Slide bottom> */}
                             <img src={ticket1} />
-                          </Slide>
+                          {/* </Slide> */}
                         </SvgTicketIcon>
                         <SvgTicketIcon>
-                          <Slide bottom>
+                          {/* <Slide bottom> */}
                             <img src={ticket2} />
-                          </Slide>
+                          {/* </Slide> */}
                         </SvgTicketIcon>
                       </SvgTicketBlock>
                     </SvgIcon>
@@ -178,7 +178,7 @@ const Services = () => {
                       desires and commitments.
                     </p>
                   </div>
-                </Slide>
+                {/* </Slide> */}
               </WrapperLeft>
             </RowLeft>
             <RowRight>
@@ -191,33 +191,33 @@ const Services = () => {
             </RowLeft>
             <RowRight>
               <WrapperRight>
-                <Slide>
+                {/* <Slide> */}
                   <div className="div-block">
                     <SvgTourIcon className="SvgIcon">
                       <SvgTourIconBlock>
-                        <Slide top>
+                        {/* <Slide top> */}
                           <img src={t1} />
-                        </Slide>
+                        {/* </Slide> */}
                       </SvgTourIconBlock>
                       <SvgTourIconBlock>
-                        <Slide top>
+                        {/* <Slide top> */}
                           <img src={t2} left />
-                        </Slide>
+                        {/* </Slide> */}
                       </SvgTourIconBlock>
                       <SvgTourIconBlock>
-                        <Slide top>
+                        {/* <Slide top> */}
                           <img src={t3} right />
-                        </Slide>
+                        {/* </Slide> */}
                       </SvgTourIconBlock>
                       <SvgTourIconBlock>
-                        <Slide top>
+                        {/* <Slide top> */}
                           <img src={t4} right />
-                        </Slide>
+                        {/* </Slide> */}
                       </SvgTourIconBlock>
                       <SvgTourIconBlock>
-                        <Slide top>
+                        {/* <Slide top> */}
                           <img src={t5} right />
-                        </Slide>
+                        {/* </Slide> */}
                       </SvgTourIconBlock>
                     </SvgTourIcon>
                     <h4>Tour Packages</h4>
@@ -228,7 +228,7 @@ const Services = () => {
                       International tour Packages.
                     </p>
                   </div>
-                </Slide>
+                {/* </Slide> */}
               </WrapperRight>
             </RowRight>
           </Row>
