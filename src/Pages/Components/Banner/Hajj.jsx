@@ -85,7 +85,7 @@ const Row = styled.div`
     background-size: 80%;
   }
   h4 {
-    font-size: 2.2vw;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #ffffff;
     text-align: left;
@@ -99,7 +99,7 @@ const Row = styled.div`
     color: #ffffff;
     line-height: 1.5;
     letter-spacing: 0;
-    font-size: 2.6vw;
+    font-size: 3rem;
     max-width: 500px;
     text-align: left;
     margin: 0;
@@ -109,7 +109,7 @@ const Row = styled.div`
     font-family: "Rowdies";
     span {
       display: block;
-      font-size: 2vw;
+      font-size: 2.2rem;
       a {
         color: #ffc107;
       }

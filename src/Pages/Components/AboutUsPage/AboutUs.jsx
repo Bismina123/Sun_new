@@ -73,7 +73,7 @@ const DownAnimation = keyframes`${slideOutUp}`;
 const InDownAnimation = keyframes`${slideInDown}`;
 
 const MainText = styled.h2`
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: capitalize;
   color: #252525;

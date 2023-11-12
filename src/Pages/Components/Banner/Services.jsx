@@ -86,100 +86,28 @@ const Services = () => {
       <SubWrapper>
         <Wrapper>
           <Row>
-            <RowLeft>
-              <RowImage src={leftImage} />
-            </RowLeft>
-            <RowRight className="shadow-right">
-              <WrapperRight>
-                {/* <Slide> */}
-                  <div className="div-block">
-                    <SvgIcon className="SvgIcon">
-                      <SvgIconBlock>
-                        {/* <Slide top> */}
-                          <img src={hajj1} />
-                        {/* </Slide> */}
-                      </SvgIconBlock>
-                      <SvgIconBlock>
-                        {/* <Slide top> */}
-                          <img src={hajj2} left />
-                        {/* </Slide> */}
-                      </SvgIconBlock>
-                      <SvgIconBlock>
-                        {/* <Slide top> */}
-                          <img src={hajj3} right />
-                        {/* </Slide> */}
-                      </SvgIconBlock>
-                      <SvgIconBlock>
-                        <img src={hajj4} left />
-                      </SvgIconBlock>
-                      <SvgIconBlock>
-                        <img src={hajj5} />
-                      </SvgIconBlock>
-                      <SvgIconBlock>
-                        <img src={hajj6} />
-                      </SvgIconBlock>
-                      <SvgIconBlock>
-                        {/* <Slide top> */}
-                          <img src={hajj7} />
-                        {/* </Slide> */}
-                      </SvgIconBlock>
-                      <SvgIconBlock>
-                        {/* <Slide top> */}
-                          <img src={hajj8} />
-                        {/* </Slide> */}
-                      </SvgIconBlock>
-                      <SvgIconBlock>
-                        {/* <Slide top> */}
-                          <img src={hajj9} />
-                        {/* </Slide> */}
-                      </SvgIconBlock>
-                      <SvgIconBlock>
-                        {/* <Slide top> */}
-                          <img src={hajj10} />
-                        {/* </Slide> */}
-                      </SvgIconBlock>
-                    </SvgIcon>
-                    <h4>Hajj & umrah</h4>
-                    <p>
-                      We are a company which have a colossal practice about
-                      Hajj, Umrah and visit to Holy places, we offer the
-                      unparalleled services to the pilgrims owing to have
-                      self-experience and preeminent acquaintance.
-                    </p>
-                  </div>
-                {/* </Slide> */}
-              </WrapperRight>
-            </RowRight>
-          </Row>
-          <Row>
             <RowLeft className="shadow-left">
               <WrapperLeft>
-                {/* <Slide bottom> */}
-                  <div className="div-block">
-                    <SvgIcon className="SvgIcon">
-                      <SvgTicketBlock>
-                        <SvgTicketIcon>
-                          {/* <Slide bottom> */}
-                            <img src={ticket1} />
-                          {/* </Slide> */}
-                        </SvgTicketIcon>
-                        <SvgTicketIcon>
-                          {/* <Slide bottom> */}
-                            <img src={ticket2} />
-                          {/* </Slide> */}
-                        </SvgTicketIcon>
-                      </SvgTicketBlock>
-                    </SvgIcon>
-                    <h4>Air Tickets</h4>
-                    <p>
-                      Being an accredited travel company we can provide travel
-                      documents for all the major Airlines. Our Company is
-                      equipped with latest reservation systems (GDS) where we
-                      can reserve, book and rebook flights according to your
-                      desires and commitments.
-                    </p>
-                  </div>
-                {/* </Slide> */}
+                <div className="div-block">
+                  <SvgIcon className="SvgIcon">
+                    <SvgTicketBlock>
+                      <SvgTicketIcon>
+                        <img src={ticket1} />
+                      </SvgTicketIcon>
+                      <SvgTicketIcon>
+                        <img src={ticket2} />
+                      </SvgTicketIcon>
+                    </SvgTicketBlock>
+                  </SvgIcon>
+                  <h4>Air Tickets</h4>
+                  <p>
+                    Being an accredited travel company we can provide travel
+                    documents for all the major Airlines. Our Company is
+                    equipped with latest reservation systems (GDS) where we can
+                    reserve, book and rebook flights according to your desires
+                    and commitments.
+                  </p>
+                </div>
               </WrapperLeft>
             </RowLeft>
             <RowRight>
@@ -193,42 +121,42 @@ const Services = () => {
             <RowRight>
               <WrapperRight>
                 {/* <Slide> */}
-                  <div className="div-block">
-                    <SvgTourIcon className="SvgIcon">
-                      <SvgTourIconBlock>
-                        {/* <Slide top> */}
-                          <img src={t1} />
-                        {/* </Slide> */}
-                      </SvgTourIconBlock>
-                      <SvgTourIconBlock>
-                        {/* <Slide top> */}
-                          <img src={t2} left />
-                        {/* </Slide> */}
-                      </SvgTourIconBlock>
-                      <SvgTourIconBlock>
-                        {/* <Slide top> */}
-                          <img src={t3} right />
-                        {/* </Slide> */}
-                      </SvgTourIconBlock>
-                      <SvgTourIconBlock>
-                        {/* <Slide top> */}
-                          <img src={t4} right />
-                        {/* </Slide> */}
-                      </SvgTourIconBlock>
-                      <SvgTourIconBlock>
-                        {/* <Slide top> */}
-                          <img src={t5} right />
-                        {/* </Slide> */}
-                      </SvgTourIconBlock>
-                    </SvgTourIcon>
-                    <h4>Tour Packages</h4>
-                    <p>
-                      We are the travel company which offers various domestic
-                      and international tour packages service within your
-                      budget. We are specialized various Domestic &
-                      International tour Packages.
-                    </p>
-                  </div>
+                <div className="div-block">
+                  <SvgTourIcon className="SvgIcon">
+                    <SvgTourIconBlock>
+                      {/* <Slide top> */}
+                      <img src={t1} />
+                      {/* </Slide> */}
+                    </SvgTourIconBlock>
+                    <SvgTourIconBlock>
+                      {/* <Slide top> */}
+                      <img src={t2} left />
+                      {/* </Slide> */}
+                    </SvgTourIconBlock>
+                    <SvgTourIconBlock>
+                      {/* <Slide top> */}
+                      <img src={t3} right />
+                      {/* </Slide> */}
+                    </SvgTourIconBlock>
+                    <SvgTourIconBlock>
+                      {/* <Slide top> */}
+                      <img src={t4} right />
+                      {/* </Slide> */}
+                    </SvgTourIconBlock>
+                    <SvgTourIconBlock>
+                      {/* <Slide top> */}
+                      <img src={t5} right />
+                      {/* </Slide> */}
+                    </SvgTourIconBlock>
+                  </SvgTourIcon>
+                  <h4>Tour Packages</h4>
+                  <p>
+                    We are the travel company which offers various domestic and
+                    international tour packages service within your budget. We
+                    are specialized various Domestic & International tour
+                    Packages.
+                  </p>
+                </div>
                 {/* </Slide> */}
               </WrapperRight>
             </RowRight>
@@ -307,6 +235,7 @@ const Row = styled.div`
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  
 `;
 const RowLeft = styled.div`
   -webkit-box-flex: 0;
@@ -429,7 +358,7 @@ const WrapperRight = styled.div`
     display: block;
   }
   h4 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
@@ -467,7 +396,7 @@ const WrapperLeft = styled.div`
     display: block;
   }
   h4 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
