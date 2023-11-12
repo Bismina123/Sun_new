@@ -11,15 +11,36 @@ import AtomClone from "./AtomPage/AtomClone";
 import ToursMainPage from "./Pages/Components/ToursMainPage/ToursMainPage";
 import Airoplane from "./Pages/Components/Airoplane3d/Airoplane";
 import { LandingPage } from "./Pages/Components/LandingPage/LandingPage";
+import { Loader } from "./Pages/Loader/Loader";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadData = async () => {
+      await new Promise((resolve) => setTimeout(resolve, 3000));
+      setLoading(false);
+    };
+
+    loadData();
+  }, []);
+
   return (
     <>
       <BrowserRouter>
+        {loading ? (
+          <Loader />
+        ) : (
+          <>
+            <Routes>
+              <Route element={<LandingPage />} path="/" />
+            </Routes>
+          </>
+        )}
         <Routes>
           <Route element={<AtomClone />} path="/inner-page" />
           <Route element={<ToursMainPage />} path="/tours-page" />
-          <Route element={<LandingPage />} path="/" />
         </Routes>
       </BrowserRouter>
     </>
