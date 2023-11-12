@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./banner.css";
 import styled, { keyframes } from "styled-components";
 import {
@@ -27,12 +27,36 @@ import "@fontsource/rowdies/300.css"; // Specify weight
 // import "@fontsource/rowdies/300-italic.css"; // Specify weight and style
 // import Flip from 'react-reveal/Flip';
 const Footer = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const footerRef = useRef();
+  useEffect(() => {
+    const handleScroll = (entries) => {
+      const [entry] = entries;
+      // If the element is in the viewport
+      if (entry.isIntersecting) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    const observer = new IntersectionObserver(handleScroll, {
+      threshold: 0.5, // Adjust the threshold based on your requirements (e.g., 2%)
+    });
+    observer.observe(footerRef.current);
+    // Clean up the observer when the component unmounts
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+  const divClassName = isScrolled ? "scrolled" : "";
   return (
-    <Wrapper id="footer">
+    <Wrapper
+      id="footer"
+      ref={footerRef}
+      className={`scrollable-div ${divClassName}`}
+    >
       <Row>
-        <Row30>
-          
-        </Row30>
+        <Row30></Row30>
         <Row70>
           <Row>
             <Row33>
@@ -224,27 +248,39 @@ const Wrapper = styled.div`
     transition: opacity 2.3s;
     margin: 0 0 5px 0;
   }
+  &.scrolled {
+    .s {
+      animation: dropS 2s linear forwards;
+    }
+    .u {
+      animation: dropU 2.4s linear forwards 0.2s;
+    }
+    .n {
+      animation: dropN 2.5s linear forwards 0.4s;
+    }
+    .logo-icon {
+      animation: dropIcon 1.5s linear forwards 0.4s;
+    }
+  }
   .s {
     opacity: 0;
-    animation: dropS 1.5s linear forwards;
     color: #ffffff;
     /* color: #4DB6AC; */
   }
   .u {
     opacity: 0;
-    animation: dropU 1s linear forwards 0.2s;
+
     color: #ffffff;
     /* color: #64B5F6; */
   }
   .n {
     opacity: 0;
-    animation: dropN 1.5s linear forwards 0.4s;
-    color: #ffffff;
+
     /* color: #FFF176; */
   }
   .logo-icon {
     opacity: 0;
-    animation: dropIcon 1.5s linear forwards 0.4s;
+
     display: flex;
     img {
       width: 15vw;

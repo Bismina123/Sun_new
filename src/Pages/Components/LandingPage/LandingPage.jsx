@@ -7,6 +7,7 @@ import AboutUs from "../AboutUsPage/AboutUs";
 import WhatweDo from "../WhatweDo/WhatweDo";
 import Services from "../Banner/Services";
 import Footer from "../Banner/Footer";
+import Hajj from "../Banner/Hajj";
 
 export const LandingPage = () => {
   return (
@@ -17,6 +18,7 @@ export const LandingPage = () => {
         <Banner />
         <AboutUs />
         <WhatweDo />
+        <Hajj />
         <Services />
         <Footer />
       </Landing>
@@ -32,4 +34,11 @@ const Landing = styled.div`
     #356a96,
     #3288b6
   );
+  /* background: rgb(194, 191, 191);
+  background: linear-gradient(
+    17deg,
+    rgba(194, 191, 191, 1) 0%,
+    rgba(141, 139, 217, 1) 23%,
+    rgba(50, 136, 182, 1) 100%
+  ); */
 `;
