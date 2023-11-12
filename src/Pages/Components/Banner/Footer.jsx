@@ -259,7 +259,7 @@ const Wrapper = styled.div`
       animation: dropN 2.5s linear forwards 0.4s;
     }
     .logo-icon {
-      animation: dropIcon 1.5s linear forwards 0.4s;
+      animation: dropIcon 2.5s linear forwards 0.4s;
     }
   }
   .s {

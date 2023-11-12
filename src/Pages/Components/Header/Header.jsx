@@ -260,7 +260,7 @@ const MainWrapper = styled.div`
   justify-content: space-around;
   width: 100%;
   /* background: rgb(255 255 255 / 20%); */
-  z-index: 3;
+  z-index: 99;
   top: 0;
   left: 0;
   right: 0;
@@ -273,6 +273,8 @@ const MainWrapper = styled.div`
     padding: 0;
     & > div {
       & > div {
+        border-radius: 0 0 15px 15px;
+        background: rgb(255 255 255 / 95%);
         & > div {
           width: 100%;
         }
@@ -289,9 +291,9 @@ const Wrapper = styled.div`
 const HeaderWrapper = styled.div`
   background: rgb(255 255 255 / 60%);
   justify-content: space-between;
-  border-radius: 10px;
+  border-radius: 15px;
   align-items: center;
-  padding: 10px 10px;
+  padding: 10px 20px;
   max-width: 80%;
   margin: 0 auto;
   display: flex;
@@ -314,6 +316,7 @@ const HeaderMenu = styled.div`
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   p {
     font-family: "Rubik";
     margin: 5px 0 0 0;

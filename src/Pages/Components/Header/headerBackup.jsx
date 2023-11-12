@@ -256,7 +256,7 @@ const MainWrapper = styled.div`
   justify-content: space-around;
   width: 100%;
   /* background: rgb(255 255 255 / 20%); */
-  z-index: 1;
+  z-index: 99;
   top: 0;
   left: 0;
   right: 0;
@@ -268,8 +268,11 @@ const MainWrapper = styled.div`
   &.fixed {
     padding: 0;
     & > div {
+      background: blue;
       & > div {
+        background: green;
         & > div {
+          background: red;
           width: 100%;
         }
       }
