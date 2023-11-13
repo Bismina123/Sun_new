@@ -642,7 +642,7 @@ const PlaneWrapper = styled.div`
   animation: 1s ${UpAnimation};
   /* font-size: 100vh;
    */
-  animation: 1.5s ${BottomLeftAnimation};
+
   /* transition: opacity 1.5s; */
   /* &.topScroll {
     animation: 1.5s ${DownAnimation};
