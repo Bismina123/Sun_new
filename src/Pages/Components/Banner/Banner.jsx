@@ -568,7 +568,7 @@ const MainWrapper = styled.div`
     display: flex;
     font-size: 30vw;
     font-family: "Rowdies";
-    color: #252525;
+    color: #ffffff;
     position: relative;
     text-transform: uppercase;
     letter-spacing: -5.5px;
