@@ -6,7 +6,13 @@
     font-style: normal;
     font-display: block;
 }
-
+@font-face {
+    font-family: "Atomicmarker";
+    src: url("https://uploads-ssl.webflow.com/636a19fb40cadc7608cc47df/63775fae25cdcb4f0a480ef5_AtomicMarker.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
 #root {
     width: 100vw;
     min-height: 100vh;
@@ -268,5 +274,5 @@ body {
 }
 
 .earth-3d-styles {
-    height: 500px;
+    height: 550px;
 }

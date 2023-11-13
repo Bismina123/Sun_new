@@ -47,6 +47,9 @@
     opacity: 1;
     color: #252525;
     letter-spacing: -2px;
+    display: flex;
+    align-items: center;
+    
 }
 
 .margin--bottoms p {

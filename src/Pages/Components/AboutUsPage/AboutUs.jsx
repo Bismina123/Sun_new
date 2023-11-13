@@ -16,12 +16,13 @@ import topImage from "../Banner/assets/img/top.png";
 // import Fade from "react-reveal/Fade";
 
 // import Bounce from "react-reveal/Bounce";
+import { Fade, Zoom } from "react-awesome-reveal";
 const AboutUs = () => {
   const [isScrolled, setIsScrolled] = React.useState(-1);
   return (
     <MainWrapper className="relative z-0">
       <motion.div variants={slideIn("left", "tween", 0.2, 1)}>
-        {/* <Fade bottom cascade duration={2000}> */}
+        <Fade direction="top" duration={2000}>
           <MainText
             className={`aboutUsText ${
               isScrolled === 1
@@ -36,8 +37,8 @@ const AboutUs = () => {
             <br />
             travelling
           </MainText>
-        {/* </Fade> */}
-        {/* <Fade right cascade duration={3000}> */}
+        </Fade>
+        <Zoom direction="right">
           <Paragraph
             className={`${
               isScrolled === 1
@@ -55,15 +56,16 @@ const AboutUs = () => {
             measures taken in-house to ensure a safe and delightful travel
             experience for our customers.
           </Paragraph>
-        {/* </Fade> */}
+        </Zoom>
       </motion.div>
       {/* <Bounce bottom duration={4000}> */}
-        <motion.div
-          variants={slideIn("right", "tween", 0.2, 1)}
-          className="xl:flex-1 earth-3d-styles"
-        >
-          <EarthCanvas />
-        </motion.div>
+      <div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className=" earth-3d-styles"
+
+      >
+        <EarthCanvas />
+      </div>
       {/* </Bounce> */}
     </MainWrapper>
   );
@@ -120,7 +122,7 @@ const MainWrapper = styled.div`
   width: 100%;
   padding: 20px 15%;
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 50% 30%;
   width: 100%;
   overflow-x: hidden;
   max-width: 100%;

@@ -51,7 +51,7 @@ const Footer = () => {
   const divClassName = isScrolled ? "scrolled" : "";
   return (
     <Wrapper
-      id="footer"
+  
       ref={footerRef}
       className={`scrollable-div ${divClassName}`}
     >

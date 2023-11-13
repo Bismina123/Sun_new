@@ -20,6 +20,8 @@ import hajj from "./assets/img/hajj.png";
 import pattern from "./assets/img/pattern.png";
 import light from "./assets/img/light.png";
 import hajjBg from "./assets/img/hajj-bg.png";
+import { Fade, Hinge, JackInTheBox, Slide } from "react-awesome-reveal";
+// import { Slide } from "@mui/material";
 const Hajj = () => {
   return (
     <MainWrapper>
@@ -30,6 +32,7 @@ const Hajj = () => {
           </RowBlock>
         </Row50>
         <Row50>
+        <JackInTheBox direction="right">
           <RowFull>
             <RowCenter>
               <h4>This Hajj Season</h4>
@@ -41,6 +44,7 @@ const Hajj = () => {
               </p>
             </RowCenter>
           </RowFull>
+          </JackInTheBox>
         </Row50>
       </Row>
     </MainWrapper>
@@ -170,6 +174,7 @@ const RowFull = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 100px;
 `;
 
 export default Hajj;

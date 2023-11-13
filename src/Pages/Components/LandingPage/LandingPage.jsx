@@ -13,15 +13,19 @@ export const LandingPage = () => {
   return (
     <>
       <Header />
-      <Airoplane />
+      {/* <Airoplane /> */}
       <Landing>
         <Banner />
         <AboutUs />
         <WhatweDo />
-        <Hajj />
+
         <Services />
-        <Footer />
+       
+        <Hajj />
+        
+      <Footer />
       </Landing>
+    
     </>
   );
 };

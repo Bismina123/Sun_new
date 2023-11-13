@@ -48,6 +48,7 @@ import t3 from "./assets/img/t/3.svg";
 import t4 from "./assets/img/t/4.svg";
 import t5 from "./assets/img/t/5.svg";
 import c1 from "./assets/img/c1.png";
+import { Fade, Slide } from "react-awesome-reveal";
 const Services = () => {
   const [isScrolled, setIsScrolled] = useState(-1);
   useEffect(() => {
@@ -82,32 +83,119 @@ const Services = () => {
   const scale = 1 + scrollY * 0.0002;
   const rotate = 1 + scrollY * 0.0009;
   return (
-    <MainWrapper>
+    <MainWrapper id="footer">
       <SubWrapper>
         <Wrapper>
           <Row>
+            <RowLeft>
+              <RowImage src={leftImage} />
+            </RowLeft>
+            <RowRight className="shadow-right">
+              <WrapperRight>
+                {/* <Slide> */}
+                <div className="div-block">
+                  <div>
+                    <Slide direction="right">
+                      <SvgIcon className="SvgIcon">
+                        <SvgIconBlock>
+                          {/* <Slide top> */}
+                          <img src={hajj1} />
+                          {/* </Slide> */}
+                        </SvgIconBlock>
+                        <SvgIconBlock>
+                          {/* <Slide top> */}
+                          <img src={hajj2} left />
+                          {/* </Slide> */}
+                        </SvgIconBlock>
+                        <SvgIconBlock>
+                          {/* <Slide top> */}
+                          <img src={hajj3} right />
+                          {/* </Slide> */}
+                        </SvgIconBlock>
+                        <SvgIconBlock>
+                          <img src={hajj4} left />
+                        </SvgIconBlock>
+                        <SvgIconBlock>
+                          <img src={hajj5} />
+                        </SvgIconBlock>
+                        <SvgIconBlock>
+                          <img src={hajj6} />
+                        </SvgIconBlock>
+                        <SvgIconBlock>
+                          {/* <Slide top> */}
+                          <img src={hajj7} />
+                          {/* </Slide> */}
+                        </SvgIconBlock>
+                        <SvgIconBlock>
+                          {/* <Slide top> */}
+                          <img src={hajj8} />
+                          {/* </Slide> */}
+                        </SvgIconBlock>
+                        <SvgIconBlock>
+                          {/* <Slide top> */}
+                          <img src={hajj9} />
+                          {/* </Slide> */}
+                        </SvgIconBlock>
+                        <SvgIconBlock>
+                          {/* <Slide top> */}
+                          <img src={hajj10} />
+                          {/* </Slide> */}
+                        </SvgIconBlock>
+                      </SvgIcon>
+                    </Slide>
+                    <Slide direction="right">
+                      <h4>Global Visa</h4>
+                      <p>
+                        We are a company which have a colossal practice about
+                        Hajj, Umrah and visit to Holy places, we offer the
+                        unparalleled services to the pilgrims owing to have
+                        self-experience and preeminent acquaintance.
+                      </p>
+                    </Slide>
+                  </div>
+                  <h2>01</h2>
+                </div>
+
+                {/* </Slide> */}
+              </WrapperRight>
+            </RowRight>
+          </Row>
+          <Row>
             <RowLeft className="shadow-left">
               <WrapperLeft>
+                {/* <Slide bottom> */}
                 <div className="div-block">
-                  <SvgIcon className="SvgIcon">
-                    <SvgTicketBlock>
-                      <SvgTicketIcon>
-                        <img src={ticket1} />
-                      </SvgTicketIcon>
-                      <SvgTicketIcon>
-                        <img src={ticket2} />
-                      </SvgTicketIcon>
-                    </SvgTicketBlock>
-                  </SvgIcon>
-                  <h4>Air Tickets</h4>
-                  <p>
-                    Being an accredited travel company we can provide travel
-                    documents for all the major Airlines. Our Company is
-                    equipped with latest reservation systems (GDS) where we can
-                    reserve, book and rebook flights according to your desires
-                    and commitments.
-                  </p>
+                  <h2>02</h2>
+                  <div>
+                    <Slide direction="left">
+                      <SvgIcon className="SvgIcon">
+                        <SvgTicketBlock>
+                          <SvgTicketIcon>
+                            {/* <Slide bottom> */}
+                            <img src={ticket1} />
+                            {/* </Slide> */}
+                          </SvgTicketIcon>
+                          <SvgTicketIcon>
+                            {/* <Slide bottom> */}
+                            <img src={ticket2} />
+                            {/* </Slide> */}
+                          </SvgTicketIcon>
+                        </SvgTicketBlock>
+                      </SvgIcon>
+                    </Slide>
+                    <Slide direction="left">
+                      <h4>Air Tickets</h4>
+                      <p>
+                        Being an accredited travel company we can provide travel
+                        documents for all the major Airlines. Our Company is
+                        equipped with latest reservation systems (GDS) where we
+                        can reserve, book and rebook flights according to your
+                        desires and commitments.
+                      </p>
+                    </Slide>
+                  </div>
                 </div>
+                {/* </Slide> */}
               </WrapperLeft>
             </RowLeft>
             <RowRight>
@@ -122,43 +210,93 @@ const Services = () => {
               <WrapperRight>
                 {/* <Slide> */}
                 <div className="div-block">
-                  <SvgTourIcon className="SvgIcon">
-                    <SvgTourIconBlock>
-                      {/* <Slide top> */}
-                      <img src={t1} />
-                      {/* </Slide> */}
-                    </SvgTourIconBlock>
-                    <SvgTourIconBlock>
-                      {/* <Slide top> */}
-                      <img src={t2} left />
-                      {/* </Slide> */}
-                    </SvgTourIconBlock>
-                    <SvgTourIconBlock>
-                      {/* <Slide top> */}
-                      <img src={t3} right />
-                      {/* </Slide> */}
-                    </SvgTourIconBlock>
-                    <SvgTourIconBlock>
-                      {/* <Slide top> */}
-                      <img src={t4} right />
-                      {/* </Slide> */}
-                    </SvgTourIconBlock>
-                    <SvgTourIconBlock>
-                      {/* <Slide top> */}
-                      <img src={t5} right />
-                      {/* </Slide> */}
-                    </SvgTourIconBlock>
-                  </SvgTourIcon>
-                  <h4>Tour Packages</h4>
-                  <p>
-                    We are the travel company which offers various domestic and
-                    international tour packages service within your budget. We
-                    are specialized various Domestic & International tour
-                    Packages.
-                  </p>
+                  <div>
+                    <Slide direction="right">
+                      <SvgTourIcon className="SvgIcon">
+                        <SvgTourIconBlock>
+                          {/* <Slide top> */}
+                          <img src={t1} />
+                          {/* </Slide> */}
+                        </SvgTourIconBlock>
+                        <SvgTourIconBlock>
+                          {/* <Slide top> */}
+                          <img src={t2} left />
+                          {/* </Slide> */}
+                        </SvgTourIconBlock>
+                        <SvgTourIconBlock>
+                          {/* <Slide top> */}
+                          <img src={t3} right />
+                          {/* </Slide> */}
+                        </SvgTourIconBlock>
+                        <SvgTourIconBlock>
+                          {/* <Slide top> */}
+                          <img src={t4} right />
+                          {/* </Slide> */}
+                        </SvgTourIconBlock>
+                        <SvgTourIconBlock>
+                          {/* <Slide top> */}
+                          <img src={t5} right />
+                          {/* </Slide> */}
+                        </SvgTourIconBlock>
+                      </SvgTourIcon>
+                    </Slide>
+
+                    <Slide direction="right">
+                      <h4>Tour Packages</h4>
+                      <p>
+                        We are the travel company which offers various domestic
+                        and international tour packages service within your
+                        budget. We are specialized various Domestic &
+                        International tour Packages.
+                      </p>
+                    </Slide>
+                  </div>
+                  <h2>03</h2>
                 </div>
                 {/* </Slide> */}
               </WrapperRight>
+            </RowRight>
+          </Row>
+          <Row>
+            <RowLeft className="shadow-left">
+              <WrapperLeft>
+                {/* <Slide bottom> */}
+                <div className="div-block">
+                  <h2>04</h2>
+                  <div>
+                    <Slide direction="left">
+                      <SvgIcon className="SvgIcon">
+                        <SvgTicketBlock>
+                          <SvgTicketIcon>
+                            {/* <Slide bottom> */}
+                            <img src={ticket1} />
+                            {/* </Slide> */}
+                          </SvgTicketIcon>
+                          <SvgTicketIcon>
+                            {/* <Slide bottom> */}
+                            <img src={ticket2} />
+                            {/* </Slide> */}
+                          </SvgTicketIcon>
+                        </SvgTicketBlock>
+                      </SvgIcon>
+                    </Slide>
+                    <Slide direction="left">
+                      <h4>Certificate attestation</h4>
+                      <p>
+                        Being an accredited travel company we can provide travel
+                        documents for all the major Airlines. Our Company is
+                        equipped with latest reservation systems (GDS) where we
+                        can reserve, book and rebook flights according to your
+                        desires and commitments.
+                      </p>
+                    </Slide>
+                  </div>
+                </div>
+                {/* </Slide> */}
+              </WrapperLeft>
+            </RowLeft>
+            <RowRight>
+              <RowImage src={rightImage} />
             </RowRight>
           </Row>
         </Wrapper>
@@ -235,7 +373,6 @@ const Row = styled.div`
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  
 `;
 const RowLeft = styled.div`
   -webkit-box-flex: 0;
@@ -245,9 +382,20 @@ const RowLeft = styled.div`
   .div-block {
     border-right: solid 1px #ffffff;
     border-bottom: solid 1px #ffffff;
-    padding: 60px 20% 20px 20%;
+    padding: 60px 14% 20px 27%;
     margin: 0 -1px 0 0 !important;
     width: 100%;
+    display: flex;
+    position: relative;
+    h2 {
+      position: absolute;
+      top: -180px;
+      left: 4px;
+
+      font-size: 13em;
+      color: #dad5d580;
+      pointer-events: none;
+    }
   }
 `;
 const RowRight = styled.div`
@@ -260,6 +408,16 @@ const RowRight = styled.div`
     border-bottom: solid 1px #ffffff;
     padding: 60px 20% 20px 20%;
     width: 100%;
+    display: flex;
+    position: relative;
+    h2 {
+      position: absolute;
+      top: -180px;
+      right: 75px;
+      font-size: 13em;
+      color: #dad5d580;
+      pointer-events: none;
+    }
   }
 `;
 

@@ -180,46 +180,46 @@ const Header = () => {
   return (
     <MainWrapper className={`${scrollFixed ? "fixed" : ""}`}>
       {/* <Slide top> */}
-      <Wrapper ref={containerRef}>
-        <HeaderWrapper>
-          <HeaderLogo>
-            <img src={Logo} />
-          </HeaderLogo>
-          <HeaderMenu>
-            <MenuBlock>
-              <HeaderUl>
-                <HeaderLi>
-                  <img src={img1} alt="" />
-                </HeaderLi>
-                <HeaderLi>
-                  <img src={img2} alt="" />
-                </HeaderLi>
-                <HeaderLi>
-                  <img src={img3} alt="" />
-                </HeaderLi>
-                <HeaderLi>
-                  <img src={img4} alt="" />
-                </HeaderLi>
-                <HeaderLi>
-                  <img src={img5} alt="" />
-                </HeaderLi>
-                <HeaderLi>
-                  <img src={img6} alt="" />
-                </HeaderLi>
-              </HeaderUl>
-              <p>(Approved by Govt. of India, Ministry of Tourism)</p>
-            </MenuBlock>
-            <HeaderBar>
-              Menu{" "}
-              <NavIcon onClick={() => toggleNav(!toggle)}>
-                <Line open={toggle} />
-                <Line open={toggle} />
-                <Line open={toggle} />
-              </NavIcon>
-            </HeaderBar>
-          </HeaderMenu>
-        </HeaderWrapper>
-      </Wrapper>
+        <Wrapper ref={containerRef}>
+          <HeaderWrapper>
+            <HeaderLogo>
+              <img src={Logo} />
+            </HeaderLogo>
+            <HeaderMenu>
+              <MenuBlock>
+                <HeaderUl>
+                  <HeaderLi >
+                    <img className="rotate" src={img1} alt="" />
+                  </HeaderLi>
+                  <HeaderLi>
+                    <img className="rotate" src={img2} alt="" />
+                  </HeaderLi>
+                  <HeaderLi>
+                    <img className="rotate" src={img3} alt="" />
+                  </HeaderLi>
+                  <HeaderLi>
+                    <img  className="rotate" src={img4} alt="" />
+                  </HeaderLi>
+                  <HeaderLi>
+                    <img className="rotate" src={img5} alt="" />
+                  </HeaderLi>
+                  <HeaderLi>
+                    <img className="rotate" src={img6} alt="" />
+                  </HeaderLi>
+                </HeaderUl>
+                <p>(Approved by Govt. of India, Ministry of Tourism)</p>
+              </MenuBlock>
+              <HeaderBar>
+                Menu{" "}
+                <NavIcon onClick={() => toggleNav(!toggle)}>
+                  <Line open={toggle} />
+                  <Line open={toggle} />
+                  <Line open={toggle} />
+                </NavIcon>
+              </HeaderBar>
+            </HeaderMenu>
+          </HeaderWrapper>
+        </Wrapper>
       {/* </Slide> */}
       <Overlay open={toggle}>
         <OverlayMenu open={toggle}>
@@ -331,6 +331,14 @@ const HeaderLi = styled.li`
   font-size: 16px;
   img {
     max-width: 40px;
+  }
+  .rotate {
+    transition: all 1s ease-in-out;
+  }
+  .rotate:hover {
+    transform: rotate(360deg);
+    /* background: #65b5da8f; */
+    /* border-radius: 50%; */
   }
 `;
 
