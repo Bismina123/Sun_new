@@ -532,7 +532,7 @@ const SmallText = styled.div`
   font-size: 30px;
   margin: 20px 0 0 0;
   font-family: "Rubik";
-  color: #252525;
+  color: #ffffff;
   max-width: 300px;
   animation: 0.5s ${UpAnimation};
   transition: opacity 0.6s;
