@@ -24,6 +24,7 @@ import { Fade, Hinge, JackInTheBox, Slide } from "react-awesome-reveal";
 // import { Slide } from "@mui/material";
 const Hajj = () => {
   return (
+    
     <MainWrapper>
       <Row>
         <Row50>

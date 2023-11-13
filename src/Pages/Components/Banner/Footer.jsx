@@ -24,8 +24,10 @@ import "@fontsource/rubik/300-italic.css"; // Specify weight and style
 
 import "@fontsource/rowdies"; // Defaults to weight 300
 import "@fontsource/rowdies/300.css"; // Specify weight
+import { Parallax } from "react-parallax";
 // import "@fontsource/rowdies/300-italic.css"; // Specify weight and style
 // import Flip from 'react-reveal/Flip';
+import BgImageBlack from "../Banner/assets/img/black.jpg";
 const Footer = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const footerRef = useRef();
@@ -50,189 +52,191 @@ const Footer = () => {
   }, []);
   const divClassName = isScrolled ? "scrolled" : "";
   return (
-    <Wrapper
-  
-      ref={footerRef}
-      className={`scrollable-div ${divClassName}`}
+    <Parallax
+      bgImage={BgImageBlack}
+      blur={{ min: 15, max: -15 }}
+      strength={500}
     >
-      <Row>
-        <Row30></Row30>
-        <Row70>
-          <Row>
-            <Row33>
-              <h4>Packages</h4>
-              <ul>
-                <li
-                  id="menu-item-188"
-                  class="menu-item menu-item-type-post_type menu-item-object-package menu-item-188"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/package/popular/">
-                    Popular
-                  </a>
-                </li>
-                <li
-                  id="menu-item-189"
-                  class="menu-item menu-item-type-post_type menu-item-object-package menu-item-189"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/package/pilgrim/">
-                    Pilgrim
-                  </a>
-                </li>
-                <li
-                  id="menu-item-190"
-                  class="menu-item menu-item-type-post_type menu-item-object-package menu-item-190"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/package/student/">
-                    Student
-                  </a>
-                </li>
-                <li
-                  id="menu-item-191"
-                  class="menu-item menu-item-type-post_type menu-item-object-package menu-item-191"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/package/cruise/">
-                    Cruise
-                  </a>
-                </li>
-                <li
-                  id="menu-item-192"
-                  class="menu-item menu-item-type-post_type menu-item-object-package menu-item-192"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/package/domestic/">
-                    Domestic
-                  </a>
-                </li>
-                <li
-                  id="menu-item-193"
-                  class="menu-item menu-item-type-post_type menu-item-object-package menu-item-193"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/package/international/">
-                    International
-                  </a>
-                </li>
-              </ul>
-            </Row33>
-            <Row33>
-              <h4>Services</h4>
-              <ul>
-                <li
-                  id="menu-item-194"
-                  class="menu-item menu-item-type-post_type menu-item-object-service menu-item-194"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/service/frro-services/">
-                    FRRO Services
-                  </a>
-                </li>
-                <li
-                  id="menu-item-195"
-                  class="menu-item menu-item-type-post_type menu-item-object-service menu-item-195"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/service/medical-appointments/">
-                    Medical Appointments
-                  </a>
-                </li>
-                <li
-                  id="menu-item-196"
-                  class="menu-item menu-item-type-post_type menu-item-object-service menu-item-196"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/service/certificate-attestation/">
-                    Certificate Attestation
-                  </a>
-                </li>
-                <li
-                  id="menu-item-197"
-                  class="menu-item menu-item-type-post_type menu-item-object-service menu-item-197"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/service/passport-services/">
-                    Passport Services
-                  </a>
-                </li>
-                <li
-                  id="menu-item-198"
-                  class="menu-item menu-item-type-post_type menu-item-object-service menu-item-198"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/service/visa-services/">
-                    Visa Services
-                  </a>
-                </li>
-                <li
-                  id="menu-item-199"
-                  class="menu-item menu-item-type-post_type menu-item-object-service menu-item-199"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/service/embassy-services/">
-                    Embassy Services
-                  </a>
-                </li>
-              </ul>
-            </Row33>
-            <Row33>
-              <h4>Quick Links</h4>
-              <ul>
-                <li
-                  id="menu-item-214"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-214"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/air-ticketing/">
-                    Air Ticketing
-                  </a>
-                </li>
-                <li
-                  id="menu-item-255"
-                  class="menu-item menu-item-type-post_type menu-item-object-study_abroad menu-item-255"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/study_abroad/canada/">
-                    Study Abroad
-                  </a>
-                </li>
-                <li
-                  id="menu-item-212"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-212"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/migration-support/">
-                    Migration Support
-                  </a>
-                </li>
+      <Wrapper ref={footerRef} className={`scrollable-div ${divClassName}`}>
+        <Row>
+          <Row30></Row30>
+          <Row70>
+            <Row>
+              <Row33>
+                <h4>Packages</h4>
+                <ul>
+                  <li
+                    id="menu-item-188"
+                    class="menu-item menu-item-type-post_type menu-item-object-package menu-item-188"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/package/popular/">
+                      Popular
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-189"
+                    class="menu-item menu-item-type-post_type menu-item-object-package menu-item-189"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/package/pilgrim/">
+                      Pilgrim
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-190"
+                    class="menu-item menu-item-type-post_type menu-item-object-package menu-item-190"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/package/student/">
+                      Student
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-191"
+                    class="menu-item menu-item-type-post_type menu-item-object-package menu-item-191"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/package/cruise/">
+                      Cruise
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-192"
+                    class="menu-item menu-item-type-post_type menu-item-object-package menu-item-192"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/package/domestic/">
+                      Domestic
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-193"
+                    class="menu-item menu-item-type-post_type menu-item-object-package menu-item-193"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/package/international/">
+                      International
+                    </a>
+                  </li>
+                </ul>
+              </Row33>
+              <Row33>
+                <h4>Services</h4>
+                <ul>
+                  <li
+                    id="menu-item-194"
+                    class="menu-item menu-item-type-post_type menu-item-object-service menu-item-194"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/service/frro-services/">
+                      FRRO Services
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-195"
+                    class="menu-item menu-item-type-post_type menu-item-object-service menu-item-195"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/service/medical-appointments/">
+                      Medical Appointments
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-196"
+                    class="menu-item menu-item-type-post_type menu-item-object-service menu-item-196"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/service/certificate-attestation/">
+                      Certificate Attestation
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-197"
+                    class="menu-item menu-item-type-post_type menu-item-object-service menu-item-197"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/service/passport-services/">
+                      Passport Services
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-198"
+                    class="menu-item menu-item-type-post_type menu-item-object-service menu-item-198"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/service/visa-services/">
+                      Visa Services
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-199"
+                    class="menu-item menu-item-type-post_type menu-item-object-service menu-item-199"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/service/embassy-services/">
+                      Embassy Services
+                    </a>
+                  </li>
+                </ul>
+              </Row33>
+              <Row33>
+                <h4>Quick Links</h4>
+                <ul>
+                  <li
+                    id="menu-item-214"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-214"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/air-ticketing/">
+                      Air Ticketing
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-255"
+                    class="menu-item menu-item-type-post_type menu-item-object-study_abroad menu-item-255"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/study_abroad/canada/">
+                      Study Abroad
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-212"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-212"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/migration-support/">
+                      Migration Support
+                    </a>
+                  </li>
 
-                <li
-                  id="menu-item-217"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/package-customizer/">
-                    Package Customizer
-                  </a>
-                </li>
-                <li
-                  id="menu-item-216"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/seasonal-packages/">
-                    Seasonal Packages
-                  </a>
-                </li>
-                <li
-                  id="menu-item-215"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-215"
-                >
-                  <a href="https://sunint-test.wpstaging.neoito.com/latest-offers/">
-                    Latest Offers
-                  </a>
-                </li>
-              </ul>
-            </Row33>
-          </Row>
-        </Row70>
-      </Row>
-      <div class="wrapper one">
-        <div class="drop-main">
-          <div class="s">S</div>
-          <div class="u">U</div>
-          <div class="n">N</div>
-          <div class="logo-icon">
-            <img src={Icon} alt="" />
+                  <li
+                    id="menu-item-217"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/package-customizer/">
+                      Package Customizer
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-216"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/seasonal-packages/">
+                      Seasonal Packages
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-215"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-215"
+                  >
+                    <a href="https://sunint-test.wpstaging.neoito.com/latest-offers/">
+                      Latest Offers
+                    </a>
+                  </li>
+                </ul>
+              </Row33>
+            </Row>
+          </Row70>
+        </Row>
+        <div class="wrapper one">
+          <div class="drop-main">
+            <div class="s">S</div>
+            <div class="u">U</div>
+            <div class="n">N</div>
+            <div class="logo-icon">
+              <img src={Icon} alt="" />
+            </div>
           </div>
         </div>
-      </div>
-    </Wrapper>
+      </Wrapper>
+    </Parallax>
   );
 };
 const Wrapper = styled.div`
