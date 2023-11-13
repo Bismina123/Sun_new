@@ -42,6 +42,8 @@ import hajj9 from "./assets/img/hajj/10.svg";
 import hajj10 from "./assets/img/hajj/11.svg";
 import ticket1 from "./assets/img/tour/t1.svg";
 import ticket2 from "./assets/img/tour/t2.svg";
+import globalVisa from "./assets/img/globalvisa.png";
+import tourPic from "./assets/img/tour.png";
 import t1 from "./assets/img/t/1.svg";
 import t2 from "./assets/img/t/2.svg";
 import t3 from "./assets/img/t/3.svg";
@@ -98,48 +100,7 @@ const Services = () => {
                     <Slide direction="right">
                       <SvgIcon className="SvgIcon">
                         <SvgIconBlock>
-                          {/* <Slide top> */}
-                          <img src={hajj1} />
-                          {/* </Slide> */}
-                        </SvgIconBlock>
-                        <SvgIconBlock>
-                          {/* <Slide top> */}
-                          <img src={hajj2} left />
-                          {/* </Slide> */}
-                        </SvgIconBlock>
-                        <SvgIconBlock>
-                          {/* <Slide top> */}
-                          <img src={hajj3} right />
-                          {/* </Slide> */}
-                        </SvgIconBlock>
-                        <SvgIconBlock>
-                          <img src={hajj4} left />
-                        </SvgIconBlock>
-                        <SvgIconBlock>
-                          <img src={hajj5} />
-                        </SvgIconBlock>
-                        <SvgIconBlock>
-                          <img src={hajj6} />
-                        </SvgIconBlock>
-                        <SvgIconBlock>
-                          {/* <Slide top> */}
-                          <img src={hajj7} />
-                          {/* </Slide> */}
-                        </SvgIconBlock>
-                        <SvgIconBlock>
-                          {/* <Slide top> */}
-                          <img src={hajj8} />
-                          {/* </Slide> */}
-                        </SvgIconBlock>
-                        <SvgIconBlock>
-                          {/* <Slide top> */}
-                          <img src={hajj9} />
-                          {/* </Slide> */}
-                        </SvgIconBlock>
-                        <SvgIconBlock>
-                          {/* <Slide top> */}
-                          <img src={hajj10} />
-                          {/* </Slide> */}
+                          <img src={globalVisa} alt="" />
                         </SvgIconBlock>
                       </SvgIcon>
                     </Slide>
@@ -169,18 +130,9 @@ const Services = () => {
                   <div>
                     <Slide direction="left">
                       <SvgIcon className="SvgIcon">
-                        <SvgTicketBlock>
-                          <SvgTicketIcon>
-                            {/* <Slide bottom> */}
-                            <img src={ticket1} />
-                            {/* </Slide> */}
-                          </SvgTicketIcon>
-                          <SvgTicketIcon>
-                            {/* <Slide bottom> */}
-                            <img src={ticket2} />
-                            {/* </Slide> */}
-                          </SvgTicketIcon>
-                        </SvgTicketBlock>
+                        <SvgIconBlock>
+                          <img src={globalVisa} alt="" />
+                        </SvgIconBlock>
                       </SvgIcon>
                     </Slide>
                     <Slide direction="left">
@@ -212,33 +164,11 @@ const Services = () => {
                 <div className="div-block">
                   <div>
                     <Slide direction="right">
-                      <SvgTourIcon className="SvgIcon">
-                        <SvgTourIconBlock>
-                          {/* <Slide top> */}
-                          <img src={t1} />
-                          {/* </Slide> */}
-                        </SvgTourIconBlock>
-                        <SvgTourIconBlock>
-                          {/* <Slide top> */}
-                          <img src={t2} left />
-                          {/* </Slide> */}
-                        </SvgTourIconBlock>
-                        <SvgTourIconBlock>
-                          {/* <Slide top> */}
-                          <img src={t3} right />
-                          {/* </Slide> */}
-                        </SvgTourIconBlock>
-                        <SvgTourIconBlock>
-                          {/* <Slide top> */}
-                          <img src={t4} right />
-                          {/* </Slide> */}
-                        </SvgTourIconBlock>
-                        <SvgTourIconBlock>
-                          {/* <Slide top> */}
-                          <img src={t5} right />
-                          {/* </Slide> */}
-                        </SvgTourIconBlock>
-                      </SvgTourIcon>
+                      <SvgIcon className="SvgIcon">
+                        <SvgTourIcon>
+                          <ImageBlock src={tourPic} alt="" />
+                        </SvgTourIcon>
+                      </SvgIcon>
                     </Slide>
 
                     <Slide direction="right">
@@ -266,18 +196,9 @@ const Services = () => {
                   <div>
                     <Slide direction="left">
                       <SvgIcon className="SvgIcon">
-                        <SvgTicketBlock>
-                          <SvgTicketIcon>
-                            {/* <Slide bottom> */}
-                            <img src={ticket1} />
-                            {/* </Slide> */}
-                          </SvgTicketIcon>
-                          <SvgTicketIcon>
-                            {/* <Slide bottom> */}
-                            <img src={ticket2} />
-                            {/* </Slide> */}
-                          </SvgTicketIcon>
-                        </SvgTicketBlock>
+                        <SvgIconBlock>
+                          <img src={globalVisa} alt="" />
+                        </SvgIconBlock>
                       </SvgIcon>
                     </Slide>
                     <Slide direction="left">
@@ -308,15 +229,20 @@ const Services = () => {
 const UpAnimation = keyframes`${slideInUp}`;
 const DownAnimation = keyframes`${slideOutUp}`;
 const InDownAnimation = keyframes`${slideInDown}`;
-const BottomLeftAnimation = keyframes`${fadeInTopLeft}`;
 
+const ImageBlock = styled.img`
+  width: 300px !important;
+  height: 300px !important;
+  min-width: 300px !important;
+`;
 const SvgTourIcon = styled.div`
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  max-width: 115px;
-  height: auto;
-  div {
+  width: 300px;
+  height: 300px;
+  img {
+    height: 300px;
+    width: 300px;
+  }
+  /* div {
     max-width: 90px;
     &:nth-child(1) {
       position: absolute;
@@ -348,7 +274,7 @@ const SvgTourIcon = styled.div`
     img {
       max-width: 100%;
     }
-  }
+  } */
 `;
 const SvgTourIconBlock = styled.div``;
 const SvgTicketBlock = styled.div`
@@ -425,7 +351,9 @@ const SvgIconBlock = styled.div`
   position: absolute;
   left: 0;
   bottom: 0;
-  &:nth-child(1) {
+  width: 250px;
+  height: 250px;
+  /* &:nth-child(1) {
     left: 20%;
     max-width: 65px !important;
     top: 0;
@@ -486,7 +414,7 @@ const SvgIconBlock = styled.div`
     max-width: 15px !important;
     bottom: 30%;
     z-index: 0;
-  }
+  } */
 `;
 const SvgIcon = styled.div`
   display: flex;
@@ -513,7 +441,6 @@ const WrapperRight = styled.div`
     width: 20vw;
     max-width: 330px;
     margin: 0 0 0 auto;
-    display: block;
   }
   h4 {
     font-size: 3rem;
