@@ -20,12 +20,11 @@ export const LandingPage = () => {
         <WhatweDo />
 
         <Services />
+
        
-        <Hajj />
-        
-      <Footer />
       </Landing>
-    
+      <Hajj />
+      <Footer />
     </>
   );
 };
