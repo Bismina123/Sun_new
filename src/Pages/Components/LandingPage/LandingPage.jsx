@@ -13,7 +13,7 @@ export const LandingPage = () => {
   return (
     <>
       <Header />
-      {/* <Airoplane /> */}
+      <Airoplane />
       <Landing>
         <Banner />
         <AboutUs />

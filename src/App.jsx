@@ -35,13 +35,11 @@ function App() {
           <>
             <Routes>
               <Route element={<LandingPage />} path="/" />
+              <Route element={<AtomClone />} path="/inner-page" />
+              <Route element={<ToursMainPage />} path="/tours-page" />
             </Routes>
           </>
         )}
-        <Routes>
-          <Route element={<AtomClone />} path="/inner-page" />
-          <Route element={<ToursMainPage />} path="/tours-page" />
-        </Routes>
       </BrowserRouter>
     </>
   );

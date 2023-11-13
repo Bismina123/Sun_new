@@ -77,7 +77,7 @@ const AeroplaneModel = () => {
   
     t1.to(helicopter.scene.position, {
       x: -5, //helicopter moveing to right
-      duration: 2,
+      duration: 5,
       ease: "power1.out",
     });
     t1.to(helicopter.scene.rotation, {
